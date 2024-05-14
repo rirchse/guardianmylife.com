@@ -1,0 +1,78 @@
+Lead Owner
+Lead Type
+id
+Lead Date
+First Name
+Last Name
+
+Date of Birth
+Age
+Do you have a Mortgage?
+Lender
+Mortgage Date
+Mortgage Total
+Mortgage Balance
+Personal Email
+
+Home Number
+Mobile Number
+Work Number
+Street Address
+City
+State
+Zip
+
+[Life Insurance] Company Name
+Policy Number
+Policy Issued Date
+Are you Married?
+Spouse Name
+Spouse Date of Birth
+Wedding Anniversary Date
+
+[Small Business] Company Name
+Contact Full Name
+Contact Title
+Bsuienss Phone Number
+Website
+Business Email
+
+
+---------------------
+
+[-- Lead ID and lead owner by logged in user will auto generate the system --]
+[--- common fields for Life Insurance & Small Business]
+
+Lead Type
+Lead Date
+First Name
+Last Name
+Home Number
+Mobile Number
+Work Number
+Email Address
+Company Name
+Street Address
+City
+State
+Zip
+
+[--- these fields for Life Insurance ----]
+Date of Birth
+Age
+Do you have a Mortgage?
+Lender
+Mortgage Date
+Mortgage Total
+Mortgage Balance
+Policy Number
+Policy Issued Date
+Are you Married?
+Spouse Name
+Spouse Date of Birth
+Wedding Anniversary Date
+
+[--- these fields for Small Business]
+Contact Full Name
+Contact Title
+Website
