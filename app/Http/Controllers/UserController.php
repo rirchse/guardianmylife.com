@@ -20,6 +20,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Log;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx\Rels;
 use Spatie\LaravelIgnition\FlareMiddleware\AddLogs;
+use Session;
 
 class UserController extends Controller
 {
@@ -497,5 +498,27 @@ class UserController extends Controller
         $user->save();
         
         return redirect()->back()->with('success', 'Customer Updated successfully');
+    }
+
+
+    /** other method agent sign up */
+    public function agent()
+    {
+        if(Auth::user()->role == 1 || Auth::user()->role == 2)
+        {
+            $users = User::orderBy('users.id', 'DESC')
+            ->where('users.signup_by', 'Web')
+            ->leftJoin('users as agent', 'agent.id', 'users.agent_id');
+            if(Auth::user()->role == 2)
+            {
+                $users = $users->where('users.agent_id', Auth::id());
+            }
+            $users = $users->select('users.*', 'agent.name as agent_name')
+            ->get();
+            return view('users.agent', compact('users'));
+        }
+        
+        Session::flash('error', 'Permission denied!');
+        return back();
     }
 }

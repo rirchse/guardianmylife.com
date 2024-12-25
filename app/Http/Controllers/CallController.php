@@ -102,7 +102,7 @@ class CallController extends Controller
             /** required information for google calendar */
             $data = [
                 // allways show the agent name
-                'title' => 'Appointment with '.$agent->name,
+                'title' => 'Appointment with Agent',
                 'email' => $customer->email,
                 'date_time' => $request->appoint_date_time,
                 // virtually location google meet 

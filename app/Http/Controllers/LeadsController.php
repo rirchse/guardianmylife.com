@@ -26,14 +26,15 @@ class LeadsController extends Controller
 
         if($user->role == 3)
         {
-            $query->where('customers.assigned_to', $user->id);
+            $query = $query->where('customers.assigned_to', $user->id);
         }
         elseif($user->role == 2)
         {
-            $query->where('customers.assigned_to', 0);
+            $query = $query->where('customers.assigned_to', 0)->where('customers.lead_owner', Auth::id());
         }
 
         $leads = $query->where('calls.customer_id', NULL)
+        ->where('customers.referrer_id', NULL)
         ->select('customers.*', 'users.name', 'users2.name as member_name', 'calls.customer_id')->get();
 
         return view('leads.index', compact('leads'));

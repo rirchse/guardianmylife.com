@@ -1,0 +1,186 @@
+<!-- Modal -->
+<style>
+   .modal, .modal label{color:#000}
+   .form-control{border:1px solid #999!important}
+</style>
+<div class="modal fade" id="exampleModal" tabindex="-2" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog" role="document" style="width:100%; max-width: 900px">
+      <div class="modal-content">
+         <div class="modal-header">Calculate the right amount you need</div>
+         <div class="modal-body calc-form">
+            <div class="row">
+               <div class="col-md-12">
+                  <table id="items" class="table">
+                     <tr>
+                        <th>Name of costs</th>
+                        <th style="width:120px">Cost Per</th>
+                        <th style="width:120px">Amount</th>
+                        <th style="width:120px">Year For</th>
+                        <th style="width:120px">Total</th>
+                        <th style="width:60px">Action</th>
+                     </tr>
+                     <tr>
+                        <td><input name="cost-names[]" list="cost-list" type="text" class="form-control"></td>
+                        <td><select name="cost_per[]" id="">
+                           <option value="">Select</option>
+                           <option value="Day">Day</option>
+                           <option value="Week">Week</option>
+                           <option value="Month">Month</option>
+                           <option value="Year">Year</option>
+                        </select></td>
+                        <td>
+                           <input type="number" class="form-control" name="amount[]">
+                        </td>
+                        <td>
+                           <input type="number" class="form-control" name="durations[]" onchange="calc(this)"></td>
+                        <td>
+                           <input type="number" class="form-control total" name="totals[]">
+                        </td>
+                        <td>
+                           <button type="button" onclick="rmtr(this)"><i class="fa fa-close"></i></button>
+                        </td>
+                     </tr>
+                  </table>
+               </div>
+            </div>
+            <div class="row">
+               <table class="table">
+                  <tr>
+                     <td>
+                        <button class="btn btn-info" onclick="addRow()"><i class="fa fa-plus"></i> Add More Fields</button>
+                     </td>
+                     <td style="width:200px"><label>Grand Total = <input type="number" class="form-control" name="gtotal" id="gtotal"></label>
+                     </td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+         <div class="modal-footer">
+            <button class="btn btn-danger" data-dismiss="modal">Close</button>
+         </div>
+      </div>
+   </div>
+</div>
+
+
+
+<script>
+   //add row
+   function addRow()
+   {
+      var items = document.getElementById('items');
+
+      var row = items.insertRow(-1);
+      var td_name = row.insertCell(0);
+      var td_cost = row.insertCell(1);
+      var td_amount = row.insertCell(2);
+      var td_duration = row.insertCell(3);
+      var td_total = row.insertCell(4);
+      var td_close = row.insertCell(5);
+
+      // add item name
+      var name = document.createElement('input');
+      name.name = "names[]";
+      name.type = "text";
+      name.setAttribute('list', 'cost-list');
+      name.setAttribute('class', 'form-control');
+      td_name.appendChild(name);
+
+      //add cost per
+      var cost_in = document.createElement('select');
+      cost_in.name = "cost_in[]";
+      cost_in.setAttribute('class', 'form-control');
+      cost_in.innerHTML = '<option value="">Select One</option>'+
+                           '<option value="Day">Day</option>'+
+                           '<option value="Week">Week</option>'+
+                           '<option value="Month">Month</option>'+
+                           '<option value="Year">Year</option>';
+      td_cost.appendChild(cost_in);
+
+      // add item name
+      var amount = document.createElement('input');
+      amount.name = "amounts[]";
+      amount.type = "number";
+      amount.setAttribute('class', 'form-control');
+      td_amount.appendChild(amount);
+
+      // add item duration
+      var duration = document.createElement('input');
+      duration.name = "durations[]";
+      duration.type = "number";
+      duration.setAttribute('onchange', 'calc(this)');
+      duration.setAttribute('class', 'form-control');
+      td_duration.appendChild(duration);
+
+      // add item total
+      var total = document.createElement('input');
+      total.name = "totals[]";
+      total.type = "number";
+      total.setAttribute('class', 'form-control total');
+      td_total.appendChild(total);
+
+      // add item close
+      var close = document.createElement('button');
+      close.name = "closes[]";
+      close.type = "button";
+      close.innerHTML = '<i class="fa fa-close"></i>';
+      close.setAttribute('onclick', 'rmtr(this)');
+      td_close.appendChild(close);
+
+      // console.log('working');
+   }
+
+   function calc(e)
+   {
+      var cost_per = e.parentNode.previousElementSibling.previousElementSibling.firstElementChild;
+      
+      var cost = cost_per.options[cost_per.selectedIndex];
+      var amount = e.parentNode.previousElementSibling.firstElementChild;
+      var total = e.parentNode.nextElementSibling.firstElementChild;
+
+      if(cost.value == 'Day')
+      {
+        total.value = Number(amount.value) * 365 * Number(e.value);
+      }
+      else if(cost.value == 'Week')
+      {
+         total.value = Number(amount.value) * 52 * Number(e.value);
+      }
+      else if(cost.value == 'Month')
+      {
+         total.value = Number(amount.value) * 12 * Number(e.value);
+      }
+      else if(cost.value == 'Year')
+      {
+         total.value = Number(amount.value) * Number(e.value);
+      }
+
+      calcGtotal();
+      // console.log(cost.value);
+   }
+
+   //remove tr
+   function rmtr(e)
+   {
+      var tr = e.parentNode.parentNode;
+      tr.parentNode.removeChild(tr);
+
+      calcGtotal();
+   }
+
+   //calc total
+   function calcGtotal()
+   {
+      var amount = 0;
+      var totals = document.getElementsByClassName('total');
+      var gtotal = document.getElementById('gtotal');
+      for(var x = 0; totals.length > x; x++)
+      {
+         amount += Number(totals[x].value);
+      }
+      gtotal.value = amount;
+
+      document.getElementById('insurance_amount').value = amount;
+      console.log(amount);
+   }
+</script>

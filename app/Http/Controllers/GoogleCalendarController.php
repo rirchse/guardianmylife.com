@@ -4,20 +4,40 @@ namespace App\Http\Controllers;
 use Spatie\GoogleCalendar\Event;
 // use App\Http\Controllers\Google_Calendar;
 use Spatie\GoogleCalendar\GoogleCalendar;
+use Spatie\GoogleCalendar\GoogleCalendarFactory;
 use Carbon\Carbon;
 
 use Google\Client as GoogleClient;
 use Google\Service\Calendar;
+use Google_Client;
 
 // use Laravel\Socialite\Facades\Socialite;
 
 class GoogleCalendarController extends Controller
 {
+
+  public function connect()
+  {
+    // $LOCATION_OF_JSON_KEY = storage_path('keys/client_secret.json');
+
+    $google_client = new Google_Client();
+    $google_client->setAuthConfig(storage_path('keys/client_secret.json'));
+    $google_client->setAccessType('offline');
+    $google_client->setSubject('mesidor@guardianmylife.com');
+    $google_client->setApplicationName("Web client 2");
+    $google_client->setScopes([\Google_Service_Calendar::CALENDAR, \Google_Service_Calendar::CALENDAR_EVENTS]);
+
+    return $google_client;
+  }
+
+
+
+  /** ---------------------------------- */
   public function index()
   {
     $events = Event::get(null, null, [], ENV('GOOGLE_CALENDAR_ID'));
     // dd($events);
-    return $event;
+    return $events;
   }
 
   public function create(array $data)
@@ -25,14 +45,19 @@ class GoogleCalendarController extends Controller
     $event = new Event;
     $event->name = $data['title'];
     $event->description = $data['details'];
-    // $event->addAttendee(['email' => $data['email']]);
     $event->location = $data['location'];
     // $event->addMeetLink();
-    // $event->conferenceData = addMeetLink();
+    // $event->addAttendee(['email' => 'rirstt@gmail.com']);
     $event->startDateTime = Carbon::parse($data['date_time']);
     // $event->startDateTime = Carbon::now();
     $event->endDateTime = Carbon::parse($data['date_time'])->addHour();
-    $event->save();
+
+    $optParams = [
+      'sendNotifications' => true
+    ];
+
+    $event->save('insertEvent', $optParams);
+    // $event->save();
     // dd($event);
     $lastEvent = $this->getLastEvent($event->startDateTime);
     return $lastEvent;

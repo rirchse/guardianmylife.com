@@ -19,19 +19,30 @@
         </div>
 			</div>
 		</div>
-		<!-- email footer -->
 
+		<!-- email footer -->
+		@if(!empty($agent))
+		<div style="padding-bottom: 30px; background: #fff; padding: 25px; display: block;">
+			<img src="{{ $message->embed($logo) }}" alt="logo" style="float: left; display: flex; width: 130px; padding: 20px;">
+			<p style="font-size: 21px; width:100%">
+			{!! $agent->name !!}<br>
+			Agent<br>
+			<a href="{{config('app.url')}}" target="_blank">{{config('app.name')}}</a><br>
+			Address:{!! $agent->address !!}<br>
+			Phone: {!! $agent->contact !!}<br>
+			<a href="{{config('app.url')}}">{{config('app.url')}}</a>
+			</p>
+		</div>
+		@else
 		<div style="padding-bottom: 30px; background: #fff; padding: 25px; display: block;">
 			<img src="{{ $message->embed($logo) }}" alt="logo" style="float: left; display: flex; width: 180px; padding: 20px;">
 			<p style="font-size: 21px; width:100%">
-			Mesidor Azor<br>
-			Founder & CEO<br>
-			<a href="http://guardianmylife.com" target="_blank">{{config('app.name')}}</a><br>
-			Address:<br>
-			Phone: +1 (646) 725-6292<br>
-			<a href="http://guardianmylife.com">www.guardianmylife.com</a>
-		</p>
+			<a href="{{config('app.url')}}" target="_blank">{{config('app.name')}}</a><br>
+			Phone: (347) 336-1929<br>
+			<a href="{{config('app.url')}}">{{config('app.url')}}</a>
+			</p>
 		</div>
+		@endif
 	</div>
 </body>
 </html>

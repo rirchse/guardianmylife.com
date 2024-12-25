@@ -9,6 +9,7 @@ use App\Models\EmployeeLeadAssign;
 use App\Models\FinalCustomer;
 use App\Models\Leads;
 use App\Models\User;
+use App\Models\Contact;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
@@ -180,5 +181,12 @@ class CustomerController extends Controller
         // dd(Auth::user());
                                 
         return view('customers.index', compact('customers'));
+    }
+
+    /** requested contact list  */
+    public function contact()
+    {
+        $contacts = Contact::paginate(25);
+        return view('customers.contact', compact('contacts'));
     }
 }

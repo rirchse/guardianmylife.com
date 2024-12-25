@@ -63,7 +63,7 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4" style="position: fixed;">
     <!-- Brand Logo -->
-    <img src="/logo.png" alt="logo" style="max-width:54px;display:inline-block;margin-left:15px" class="logo">
+    <img src="/favicon.png" alt="logo" style="max-width:54px;display:inline-block;margin-left:15px" class="logo">
     <a href="/" class="brand-link" style="display:inline-block">     
       <span class="brand-text font-weight-light">{{config('app.name')}}</span>
     </a>
@@ -91,6 +91,7 @@
               <p>Dashboard</p>
             </a>          
           </li>
+          @if(Auth::user()->role != 1)
           <li class="nav-item">
             <a href="#" class="nav-link">
                 <i class="fas fa-list"></i>
@@ -130,13 +131,14 @@
               <p>Applicants</p>
             </a>
           </li>
+          @endif
           <li class="nav-item">
             <a href="{{route('customer.index')}}" class="nav-link">
                 <i class="fas fa-users"></i>
               <p>Customers</p>
             </a>
           </li>
-          @if(Auth::user()->role == 2 || Auth::user()->role == 1)
+          @if(Auth::user()->role == 2 && Auth::user()->role != 1)
           <li class="nav-item">
             <a href="{{route('remainder.index')}}" class="nav-link">
               <i class="fa fa-bell" aria-hidden="true"></i>
@@ -152,6 +154,29 @@
             </a>
           </li>
           @endif
+          @if(Auth::user()->role == 1 || Auth::user()->role == 2)
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+                <i class="fas fa-user-plus"></i>
+              <p>Referrals <i class="right fas fa-angle-left"></i></p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li>
+                <a href="{{route('referral.index')}}" class="nav-link">
+                    <i class="fas fa-list"></i>
+                  <p>View Referrers</p>
+                </a>
+              </li>
+              <li>
+                <a href="{{route('referred.customer', 'all')}}" class="nav-link">
+                    <i class="fas fa-users"></i>
+                  <p>View Referred Customers</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="{{route('agent.index')}}" class="nav-link"><i class="fas fa-users"></i> Agents</a></li>
+          @endif
           @if(Auth::user()->role == 2)
           <li class="nav-item">
             <a href="{{route('budget.index')}}" class="nav-link">
@@ -160,7 +185,7 @@
             </a>
           </li> 
           @endif 
-          @if(Auth::user()->role == 1 ||Auth::user()->role == 2 )         
+          @if(Auth::user()->role == 1 || Auth::user()->role == 2 )         
           <li class="nav-item">
             <a href="{{route('logs.index')}}" class="nav-link">
               <i class="fa fa-address-book" aria-hidden="true"></i>
@@ -176,19 +201,31 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{route('reports.dailysumhours')}}" class="nav-link">View Reports</a>
+                <a href="{{route('reports.dailysumhours')}}" class="nav-link">Life Insurance</a>
+              </li>
+              <li class="nav-item">
+                <a href="{{route('reports.dailysumhours')}}" class="nav-link">Health Insurance</a>
+              </li>
+              <li class="nav-item">
+                <a href="{{route('reports.dailysumhours')}}" class="nav-link">Small Business</a>
               </li>
             </ul>
-          </li>         
+          </li> 
           <li class="nav-item">
-            <a href="{{route('users.index')}}" class="nav-link">
+            <a href="{{route('contact.index')}}" class="nav-link"><i class="fa fa-user"></i> Contacts</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
               <i class="fa fa-users" aria-hidden="true"></i>
-              <p>Users</p>
+              <p>Admin Users <i class="right fas fa-angle-left"></i></p>
             </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item"><a href="{{route('users.index')}}" class="nav-link">Users</a></li>
+            </ul>
           </li>                        
           <li class="nav-item">
             <a href="{{route('user.forgetpassword')}}" class="nav-link">
-              <i class="fa fa-users" aria-hidden="true"></i>
+              <i class="fa fa-key" aria-hidden="true"></i>
               <p>Forgot Password</p>
             </a>
           </li>
@@ -234,7 +271,7 @@
     <div class="float-right d-none d-sm-block">
       <b>Version</b> 3.2.0
     </div>
-    <strong>Copyright &copy;  <a href="http://fflfalcon.com">FFL Falcon</a> Admin Panel.</strong> All rights reserved.
+    <strong>Copyright &copy;  <a href="{{config('app.url')}}">{{config('app.name')}}</a> Admin Panel.</strong> All rights reserved.
   </footer>
 
   <!-- Control Sidebar -->

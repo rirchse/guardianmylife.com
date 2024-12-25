@@ -1,8 +1,9 @@
 <?php
 
-
 use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\HomepageController;
 use App\Http\Controllers\AppointmentController;
 use App\Http\Controllers\CallController;
 use App\Http\Controllers\CustomerController;
@@ -13,7 +14,9 @@ use App\Http\Controllers\RemainderController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\WorkingDayHourController;
 use App\Http\Controllers\ScheduleController;
+use App\Http\Controllers\ReferralController;
 use App\Http\Controllers\GoogleCalendarController;
+use App\Http\Controllers\Google_Calendar;
 
 Route::controller(ScheduleController::class)->group(function()
 {  
@@ -28,10 +31,24 @@ Route::controller(ScheduleController::class)->group(function()
   
 });
 
+Route::controller(HomepageController::class)->group(function()
+{
+  Route::get('/', 'index')->name('home.index');
+
+  Route::prefix('/agents')->group(function()
+  {
+    Route::get('/signup', 'agentApply')->name('home.agent.apply');
+    Route::get('/', 'agentIndex')->name('agents.index');
+    Route::get('/{agent_name}', 'agentShow')->name('agents.show');
+  });
+  Route::get('/client_apply', 'clientApply')->name('home.client.apply');
+  Route::get('/contact', 'contact')->name('home.contact');
+});
+
 Route::get('/', function ()
 {
-  return view('layouts.homepage');
-});
+  return view('home.index');
+})->name('homepage');
 
 Route::controller( HomeController::class )->group( function()
 {
@@ -44,6 +61,17 @@ Route::controller(RegisterController::class)->group(function()
   Route::get('/signup', 'signup')->name('signup');
   Route::post('/signup', 'signupStore')->name('signup.store');
   Route::get('/email_verify/{token}', 'emailVerify');
+
+  Route::post('/agent_signup', 'agentSignup')->name('agent.signup.store');
+  Route::post('/contact_store', 'contactStore')->name('contact.store');
+
+  Route::get('/check_username/{username}', 'checkUsername');
+});
+
+Route::controller(LoginController::class)->group(function()
+{
+  Route::get('/login', 'login')->name('login');
+  Route::post('/_login', 'loginPost')->name('login.post');
 });
 
 /** Cronjob Action */
@@ -67,7 +95,7 @@ Auth::routes();
 
 Route::middleware(['auth'])->group(function ()
 {
-  Route::get('/home', [HomeController::class, 'index'])->name('home');
+  Route::get('/dashboard', [HomeController::class, 'index'])->name('home');
   Route::resource('budget', ExpenseController::class);
 
   // // manually logout by ajax call
@@ -112,6 +140,7 @@ Route::middleware(['auth'])->group(function ()
     Route::get('your-customers', 'finalcustomer')->name('finalcustomers.index');
 
     Route::get('calls', 'index')->name('calls.index');
+    Route::get('contact_index', 'contact')->name('contact.index');
   });
 
   /** route create by Rafiqu Islam */
@@ -143,6 +172,7 @@ Route::middleware(['auth'])->group(function ()
     Route::post('users/resetpassword', 'resetPassword')->name('user.resetPassword');
     Route::post('users/store', 'store')->name('user.store');
     Route::get('/user/{id}', 'delete')->name('user.delete');
+    Route::get('/agent', 'agent')->name('agent.index');
   });
 
   // Route::get('reports',[UserController::class,'dailysumhours'])->name('reports.dailysumhours');
@@ -151,6 +181,11 @@ Route::middleware(['auth'])->group(function ()
   Route::post('workingHours',[WorkingDayHourController::class,'store'])->name('workingHours');
 
   Route::resource('schedule', ScheduleController::class);
+  Route::resource('referral', ReferralController::class);
+  Route::controller(ReferralController::class)->group(function()
+  {
+    Route::get('referred_customer/{ref_id}', 'referredCustomer')->name('referred.customer');
+  });
 });
 
 
@@ -167,6 +202,11 @@ Route::get('reboot', function () {
 /** google api for calendar */
 Route::controller(GoogleCalendarController::class)->group(function()
 {
+  Route::get('/google-calendar-auth', 'getAuth');
+  Route::get('/google-calendar-connect', 'connect');
+  Route::get('/google-calendar/auth-callback', function(){
+    return 'callback working';
+  });
   Route::get('/google-calendar/create/{array}', 'create');
   
   Route::post('/google-calendar/connect', 'store');
@@ -177,5 +217,11 @@ Route::controller(GoogleCalendarController::class)->group(function()
   Route::get('/google-calendar_last_event/{datetime}', 'getLastEvent');
 });
 
+Route::get('/google-calendar-get-client', [Google_Calendar::class, 'getClient']);
+
 // Route::get('/auth/google', [GoogleCalendarController::class, 'redirectToGoogle']);
 // Route::get('/auth/google/callback', [GoogleCalendarController::class, 'handleGoogleCallback']);
+
+Route::get('appkey', function(){
+  return view('auth.appkey');
+});

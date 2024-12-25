@@ -14,7 +14,7 @@
         <table id="examp/le1" class="table table-bordered table-striped">
           <thead>
           <tr>
-            <th>Sr#</th>
+            <th>SL#</th>
             <th>Name</th>
             <th>Email</th>
             <th>Mobile</th>

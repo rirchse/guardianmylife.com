@@ -25,7 +25,7 @@ $source = New SourceCtrl;
                 @foreach($appointments as $app)
                 <tr>
                     <td>{{$app->id}}</td>
-                    <td>{{$app->Customer->first_name}} {{$app->Customer->last_name}}</td>
+                    <td>{{$app->customer->first_name}} {{$app->customer->last_name}}</td>
                     <td>{{isset($app->appointment)? $app->appointment: 'No'}}</td>  
                     <td>{{ $source->dtformat($app->appointment_time) }}</td>                  
                     <td>{{$app->appointment_location}}</td>  
