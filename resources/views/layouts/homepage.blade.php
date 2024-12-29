@@ -579,16 +579,6 @@
                         <span class="elementor-icon-list-text">Contact Us</span>
                       </a>
                     </li>
-                    <li class="elementor-icon-list-item">
-                      <a target="_blank" href="/uploads/docs/Guadian My Life Values.pdf">
-                        <span class="elementor-icon-list-icon">
-                          <svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-right" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path>
-                          </svg>
-                        </span>
-                        <span class="elementor-icon-list-text">Mission & Vision</span>
-                      </a>
-                    </li>
                   </ul>
                 </div>
               </div>
@@ -622,16 +612,6 @@
                           </svg>
                         </span>
                         <span class="elementor-icon-list-text">Apply to Work with GML</span>
-                      </a>
-                    </li>
-                    <li class="elementor-icon-list-item">
-                      <a href="#" target="_blank">
-                        <span class="elementor-icon-list-icon">
-                          <svg aria-hidden="true" class="e-font-icon-svg e-fas-info-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"></path>
-                          </svg>
-                        </span>
-                        <span class="elementor-icon-list-text">Content Guidelines</span>
                       </a>
                     </li>
                   </ul>
@@ -702,13 +682,13 @@
                       </a>
                     </li>
                     <li class="elementor-icon-list-item">
-                      <a href="mailto:mesidor@guardianmylife.com">
+                      <a href="mailto:info@guardianmylife.com">
                         <span class="elementor-icon-list-icon">
                           <svg aria-hidden="true" class="e-font-icon-svg e-fas-envelope" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                             <path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path>
                           </svg>
                         </span>
-                        <span class="elementor-icon-list-text">Email Us</span>
+                        <span class="elementor-icon-list-text">info@GuardianMyLife.com</span>
                       </a>
                     </li>
                     <li class="elementor-icon-list-item">
@@ -718,11 +698,11 @@
                             <path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path>
                           </svg>
                         </span>
-                        <span class="elementor-icon-list-text">Address</span>
+                        <span class="elementor-icon-list-text">244 5th Avenue NY NY 10001</span>
                       </a>
                     </li>
                     <li class="elementor-icon-list-item">
-                      <a href="#" target="_blank">
+                      <a href="https://maps.app.goo.gl/5oQa8NTY7HVPiNoa8" target="_blank">
                         <span class="elementor-icon-list-icon">
                           <svg aria-hidden="true" class="e-font-icon-svg e-fab-google" viewBox="0 0 488 512" xmlns="http://www.w3.org/2000/svg">
                             <path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"></path>
@@ -744,7 +724,10 @@
             <div class="elementor-widget-wrap elementor-element-populated">
               <div class="elementor-element elementor-element-812f7d5 elementor-widget elementor-widget-text-editor" data-id="812f7d5" data-element_type="widget" data-widget_type="text-editor.default">
                 <div class="elementor-widget-container">
-                  <p><span style="color: #ececec;"><a style="color: #ececec;" href="/uploads/docs/Guardian Life PRIVACY POLICY.pdf" target="_blank" rel="noopener">Privacy</a></span>  |  <span style="color: #ececec;"><a target="_blank" style="color: #ececec;" href="/uploads/docs/Independent_Contractor_Privacy_Notice.pdf">Independent Contractor Privacy Notice</a></span>  |  <span style="color: #ececec;"><a style="color: #ececec;" href="/uploads/docs/Do_Not_Sell_My_Personal_Information.pdf" target="_blank" rel="noopener">Do Not Sell My Personal Information</a></span></p>
+                  <p>
+                    <span style="color: #ececec;"><a style="color: #ececec;" href="/uploads/docs/Guardian Life PRIVACY POLICY.pdf" target="_blank" rel="noopener">Privacy</a></span>  |  <span style="color: #ececec;"><a target="_blank" style="color: #ececec;" href="/uploads/docs/Independent_Contractor_Privacy_Notice.pdf">Independent Contractor Privacy Notice</a></span>  |  <span style="color: #ececec;"><a style="color: #ececec;" href="/uploads/docs/Do_Not_Sell_My_Personal_Information.pdf" target="_blank" rel="noopener">Do Not Sell My Personal Information</a></span> | 
+                    <span><a style="color: #ececec;" target="_blank" href="/uploads/docs/Guadian My Life Values.pdf">Mission & Vision</a></span>
+                  </p>
                 </div>
               </div>
               <div class="elementor-element elementor-element-45f80006 elementor-icon-list--layout-inline elementor-align-center elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="45f80006" data-element_type="widget" data-widget_type="icon-list.default">
