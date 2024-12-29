@@ -8,7 +8,6 @@
 /vendor
 .env
 .env.backup
-.htaccess
 .phpunit.result.cache
 docker-compose.override.yml
 Homestead.json
