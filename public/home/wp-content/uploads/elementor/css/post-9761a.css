@@ -127,7 +127,7 @@
 }
 
 .elementor-kit-9 h3 {
-  color: var( --e-global-color-secondary);
+  /* color: var( --e-global-color-secondary); */
   font-size: var( --e-global-typography-62f5f26-font-size);
   font-weight: var( --e-global-typography-62f5f26-font-weight);
   line-height: var( --e-global-typography-62f5f26-line-height);
@@ -136,7 +136,7 @@
 }
 
 .elementor-kit-9 h4 {
-  color: var( --e-global-color-secondary);
+  /* color: var( --e-global-color-secondary); */
   font-size: var( --e-global-typography-01e3d1c-font-size);
   font-weight: var( --e-global-typography-01e3d1c-font-weight);
   line-height: var( --e-global-typography-01e3d1c-line-height);
@@ -145,7 +145,7 @@
 }
 
 .elementor-kit-9 h5 {
-  color: var( --e-global-color-secondary);
+  /* color: var( --e-global-color-secondary); */
   font-family: var( --e-global-typography-5e57db5-font-family), Sans-serif;
   font-size: var( --e-global-typography-5e57db5-font-size);
   font-weight: var( --e-global-typography-5e57db5-font-weight);
@@ -155,7 +155,7 @@
 }
 
 .elementor-kit-9 h6 {
-  color: var( --e-global-color-secondary);
+  /* color: var( --e-global-color-secondary); */
   font-family: var( --e-global-typography-8a0691a-font-family), Sans-serif;
   font-size: var( --e-global-typography-8a0691a-font-size);
   font-weight: var( --e-global-typography-8a0691a-font-weight);

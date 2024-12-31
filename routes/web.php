@@ -17,6 +17,7 @@ use App\Http\Controllers\ScheduleController;
 use App\Http\Controllers\ReferralController;
 use App\Http\Controllers\GoogleCalendarController;
 use App\Http\Controllers\Google_Calendar;
+use App\Http\Controllers\BlogController;
 
 Route::controller(ScheduleController::class)->group(function()
 {  
@@ -43,6 +44,9 @@ Route::controller(HomepageController::class)->group(function()
   });
   Route::get('/client_apply', 'clientApply')->name('home.client.apply');
   Route::get('/contact', 'contact')->name('home.contact');
+  Route::get('/team', 'team')->name('home.team');
+  Route::get('/blogs', 'blog')->name('home.blog');
+  Route::get('/blogs/{id}', 'blogShow')->name('home.blog.show');
 });
 
 Route::get('/', function ()
@@ -186,6 +190,7 @@ Route::middleware(['auth'])->group(function ()
   {
     Route::get('referred_customer/{ref_id}', 'referredCustomer')->name('referred.customer');
   });
+  Route::resource('blog', BlogController::class);
 });
 
 

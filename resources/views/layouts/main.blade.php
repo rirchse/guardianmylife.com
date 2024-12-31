@@ -191,7 +191,13 @@
               <i class="fa fa-address-book" aria-hidden="true"></i>
               <p> Login Log </p>
             </a>
-          </li> 
+          </li>
+          <li class="nav-item">
+            <a href="{{route('blog.index')}}" class="nav-link">
+              <i class="fa fa-address-book" aria-hidden="true"></i>
+              <p> Blog </p>
+            </a>
+          </li>  
           @endif
           @if(Auth::user()->role != 3)
           <li class="nav-item">

@@ -3,6 +3,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\Blog;
 use Session;
 
 class HomepageController extends Controller
@@ -55,6 +56,23 @@ class HomepageController extends Controller
   public function contact()
   {
     return view('home.contact');
+  }
+
+  public function team()
+  {
+    return view('home.team');
+  }
+
+  public function blog()
+  {
+    $blogs = Blog::orderBy('id', 'DESC')->where('status', 'Published')->paginate('25');
+    return view('home.blog', compact('blogs'));
+  }
+
+  public function blogShow($id)
+  {
+    $blog = Blog::find($id);
+    return view('home.blog-show', compact('blog'));
   }
 
 }

@@ -186,10 +186,11 @@
                               <!-- <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-252"><a href="#" class="elementor-item">News</a></li> -->
                               <!-- <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-253"><a target="_blank" rel="noopener" href="https://shop.guardianmylife.com/" class="elementor-item">Shop</a></li> -->
                               <!-- <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-835"><a href="#" class="elementor-item">Offices</a></li> -->
-                              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-836"><a href="#" class="elementor-item">Team</a></li>
+                              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-836"><a href="{{route('home.team')}}" class="elementor-item">Team</a></li>
                               <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-254"><a href="{{route('home.contact')}}" class="elementor-item">Contact Us</a></li>
-                              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1025"><a href="#" class="elementor-item">Agents</a></li>
-                              <li class=""><a target="_blank" href="https://metricool.com" class="elementor-item">Blog</a></li>
+                              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1025"><a href="{{route('home.agent.apply')}}" class="elementor-item">Agents</a></li>
+                              <li class=""><a href="{{route('home.blog')}}" class="elementor-item">Blog</a></li>
+                              {{-- <li class=""><a target="_blank" href="https://metricool.com" class="elementor-item">Blog</a></li> --}}
                             </ul>
                           </nav>
                           <div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
