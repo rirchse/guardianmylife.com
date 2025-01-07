@@ -46,7 +46,7 @@ Route::controller(HomepageController::class)->group(function()
   Route::get('/contact', 'contact')->name('home.contact');
   Route::get('/team', 'team')->name('home.team');
   Route::get('/blogs', 'blog')->name('home.blog');
-  Route::get('/blogs/{id}', 'blogShow')->name('home.blog.show');
+  Route::get('/blogs/{slug?}', 'blogShow')->name('home.blog.show');
 });
 
 Route::get('/', function ()

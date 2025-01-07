@@ -1,8 +1,8 @@
 @extends('layouts.homepage')
 @section('style')
-<link rel='stylesheet' id='elementor-post-361-css' href='/home/wp-content/uploads/elementor/css/post-361bfc4.css?ver=1720647533' media='all' />
-<link rel='stylesheet' id='gform_basic-css' href='/home/wp-content/plugins/gravityforms/assets/css/dist/basic.minfae6.css?ver=2.8.14' media='all' />
-<link rel='stylesheet' id='gform_theme-css' href='/home/wp-content/plugins/gravityforms/assets/css/dist/theme.minfae6.css?ver=2.8.14' media='all' />
+<link rel='stylesheet' id='elementor-post-361-css' href='/home/css/post-361bfc4.css?ver=1720647533' media='all' />
+<link rel='stylesheet' id='gform_basic-css' href='/home/css/basic.minfae6.css?ver=2.8.14' media='all' />
+<link rel='stylesheet' id='gform_theme-css' href='/home/css/theme.minfae6.css?ver=2.8.14' media='all' />
 <style>
    .input-radio{transform: scale(1.5); margin-right:15px }
    .blog-list{margin-top:50px; list-style: none;}
@@ -11,7 +11,7 @@
    .blog-list li{padding:15px; border-bottom:1px solid #ddd}
    .blog-list li img{padding-top: 0; float: left; max-width: 250px; padding: 0 15px 0;}
    .title{font-size: 22px; font-weight: bold}
-   .btn {border:1px solid #ddd; clear:top; background:#eee}
+   .read-btn {border:1px solid #ddd; clear:top; background:#eee}
 
 </style>
 @endsection
@@ -41,11 +41,11 @@
       <ul class="blog-list">
          @foreach($blogs as $key => $blog)
          <li>
-            <a href="{{route('home.blog.show', $blog->id)}}">
-            <img src="{{$blog->image? $blog->image :'/img/blog-image.jpg'}}" alt="">
+            <a href="{{route('home.blog.show', $blog->slug)}}">
+               <img src="{{$blog->image? $blog->image :'/img/blog-image.jpg'}}" alt="">
             <p class="title">{{$blog->title}} </p>
             <small>{!! substr($blog->details, 0, 250) !!}...</small><br>
-               <p class="btn">Read More...</p>
+               <b class="read-btn">Read More...</b>
             </a>
          </li>
          @endforeach

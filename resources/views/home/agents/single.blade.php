@@ -22,7 +22,7 @@
           </div>
           <div class="elementor-element elementor-element-73aa0aed elementor-headline--style-rotate elementor-hidden-mobile elementor-widget elementor-widget-animated-headline" data-id="73aa0aed" data-element_type="widget" data-settings="{&quot;headline_style&quot;:&quot;rotate&quot;,&quot;animation_type&quot;:&quot;blinds&quot;,&quot;rotating_text&quot;:&quot;Mortgage Protection.\nFinal Expense.\nIndexed Universal Life.\nFixed Indexed Annuities.&quot;,&quot;loop&quot;:&quot;yes&quot;,&quot;rotate_iteration_delay&quot;:2500}" data-widget_type="animated-headline.default">
             <div class="elementor-widget-container">
-              <link rel="stylesheet" href="/home/wp-content/plugins/elementor-pro/assets/css/widget-animated-headline.min.css">
+              <link rel="stylesheet" href="/home/assets/plugins/elementor-pro/assets/css/widget-animated-headline.min.css">
               <h2 class="elementor-headline elementor-headline-animation-type-blinds elementor-headline-letters">
                 <span class="elementor-headline-dynamic-wrapper elementor-headline-text-wrapper">
                 <span class="elementor-headline-dynamic-text elementor-headline-text-active">

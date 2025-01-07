@@ -20,7 +20,7 @@ $counter = 0;
     <div class="card">
         <div class="card-body">
           <div class="col-md-12" style="width:100%">
-            <a class="btn btn-sm btn-info" style="float:right" href="{{route('blog.create')}}">Add</a>
+            <a class="btn btn-sm btn-info" style="float:right" href="{{route('blog.create')}}">Add New Blog</a>
               <div class="clearfix"></div>
           </div>
             <table class="table">
@@ -35,7 +35,15 @@ $counter = 0;
               <tr>
                 <td>{{$blog->id}}</td>
                 <td>{{$blog->title}}</td>
-                <td style="color: {{$blog->status == 'Published'? 'green':'red'}}">{{$blog->status}}</td>
+                <td>
+                  @if($blog->status == 'Published')
+                  <label class="text-green">{{$blog->status}}</label>
+                  @elseif($blog->status == 'Scheduled')
+                  <label class="text-warning">{{$blog->status}}</label>
+                  @else
+                  <label class="text-danger">{{$blog->status}}</label>
+                  @endif
+                </td>
                 <td>{{$source->dtformat($blog->created_at)}}</td>
                 <td>
                   @if(auth()->user()->role == 2)
@@ -60,7 +68,7 @@ $counter = 0;
 <script>
   function view(e)
     {
-        e.parentNode.parentNode.nextElementSibling.classList.toggle('hide');
+      e.parentNode.parentNode.nextElementSibling.classList.toggle('hide');
     }
 </script>
 @endsection

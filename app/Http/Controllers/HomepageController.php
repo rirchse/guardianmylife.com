@@ -22,7 +22,7 @@ class HomepageController extends Controller
   public function agentApplyStore(Request $request)
   {
     $data = $request->all();
-    dd($data);
+    // dd($data);
   }
 
   public function agentIndex()
@@ -65,13 +65,18 @@ class HomepageController extends Controller
 
   public function blog()
   {
+    $scheduled = Blog::where('status', 'Scheduled')->where('publish_at', '<', date('Y-m-d H:i:s'))->get();
+    if($scheduled)
+    {
+      Blog::where('status', 'Scheduled')->where('publish_at', '<', date('Y-m-d H:i:s'))->update(['status' => 'Published']);
+    }
     $blogs = Blog::orderBy('id', 'DESC')->where('status', 'Published')->paginate('25');
     return view('home.blog', compact('blogs'));
   }
 
-  public function blogShow($id)
+  public function blogShow($slug)
   {
-    $blog = Blog::find($id);
+    $blog = Blog::where('slug', $slug)->first();
     return view('home.blog-show', compact('blog'));
   }
 

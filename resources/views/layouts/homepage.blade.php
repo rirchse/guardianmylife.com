@@ -3,42 +3,14 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Life Insurance | Health Insurance | Small Business">
+    <meta name="keywords" content="Insurance, Life Insurance, Health Insurance, Small Business">
+    <meta name="author" content="Mesidor Azor">
+
     <title>Guardian My Life | Life Insurance | Health Insurance</title>
-    <link rel='stylesheet' id='dashicons-css' href='home/wp-includes/css/dashicons.minef10.css?ver=6.5.3' media='all' />
-    <link rel='stylesheet' id='elusive-css' href=/home/wp-content/plugins/menu-icons/vendor/codeinwp/icon-picker/css/types/elusive.mind5f7.css />
-    <link rel='stylesheet' id='menu-icon-font-awesome-css' href='/home/wp-content/plugins/menu-icons/css/fontawesome/css/all.min7a5f.css' />
-    <link rel='stylesheet' id='foundation-icons-css' href='/home/wp-content/plugins/menu-icons/vendor/codeinwp/icon-picker/css/types/foundation-icons.min6aec.css?ver=3.0' media='all' />
-    <link rel='stylesheet' id='genericons-css' href='/home/wp-content/plugins/menu-icons/vendor/codeinwp/icon-picker/css/types/genericons.mine735.css?ver=3.4' media='all' />
-    <link rel='stylesheet' id='menu-icons-extra-css' href='/home/wp-content/plugins/menu-icons/css/extra.min3f5a.css?ver=0.13.15' media='all' />
-    <link rel="stylesheet" href="/home/css/style.css" />
-    <link rel='stylesheet' id='hello-elementor-css' href='/home/wp-content/themes/hello-elementor/style.min324d.css?ver=3.1.0' media='all' />
-    <link rel='stylesheet' id='hello-elementor-theme-style-css' href='/home/wp-content/themes/hello-elementor/theme.min324d.css?ver=3.1.0' media='all' />
-    <link rel='stylesheet' id='hello-elementor-header-footer-css' href='/home/wp-content/themes/hello-elementor/header-footer.min324d.css?ver=3.1.0' media='all' />
-    <link rel='stylesheet' id='elementor-frontend-css' href='/home/wp-content/plugins/elementor/assets/css/frontend-lite.mindcff.css?ver=3.22.3' media='all' />
-    <link rel='stylesheet' id='elementor-post-9-css' href='/home/wp-content/uploads/elementor/css/post-9761a.css?ver=1720646812' media='all' />
-    <link rel='stylesheet' id='swiper-css' href='/home/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min94a4.css?ver=8.4.5' media='all' />
-    <link rel='stylesheet' id='elementor-pro-css' href='/home/wp-content/plugins/elementor-pro/assets/css/frontend-lite.min11d9.css?ver=3.21.3' media='all' />
-    <link rel='stylesheet' id='elementor-post-139-css' href='/home/wp-content/uploads/elementor/css/post-139761a.css?ver=1720646812' media='all' />
-    <link rel='stylesheet' id='elementor-post-16-css' href='/home/wp-content/uploads/elementor/css/post-168495.css?ver=1720646813' media='all' />
-    <link rel='stylesheet' id='elementor-post-15-css' href='/home/wp-content/uploads/elementor/css/post-158495.css?ver=1720646813' media='all' />
-    <link rel='stylesheet' id='google-fonts-1-css' href='https://google.com/fonts.googleapis.com/css83b3.css?family=Be+Vietnam+Pro%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=swap&amp;ver=6.5.3' media='all' />
-    {{-- <script id="wpgmza_data-js-extra">
-      var wpgmza_google_api_status = {"message":"Engine is not google-maps","code":"ENGINE_NOT_GOOGLE_MAPS"};
-    </script> --}}
-    <script src="/home/wp-content/plugins/wp-google-maps/wpgmza_dataef10.js?ver=6.5.3" id="wpgmza_data-js"></script>
-    <script src="/home/wp-includes/js/jquery/jquery.minf43b.js?ver=3.7.1" id="jquery-core-js"></script>
-    <script src="/home/wp-includes/js/jquery/jquery-migrate.min5589.js?ver=3.4.1" id="jquery-migrate-js"></script>
-    <script src="/home/wp-content/plugins/pixelyoursite/dist/scripts/jquery.bind-first-0.2.3.minef10.js?ver=6.5.3" id="jquery-bind-first-js"></script>
-    <script src="/home/wp-content/plugins/pixelyoursite/dist/scripts/js.cookie-2.1.3.min4c71.js?ver=2.1.3" id="js-cookie-pys-js"></script>
-    <script src="/home/wp-content/plugins/pixelyoursite/dist/scripts/public0f87.js?ver=9.7.0" id="pys-js"></script>
-    {{-- <link rel="alternate" type="application/json" href="wp-json/wp/v2/pages/139.json" /> --}}
-    {{-- <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.html?rsd" /> --}}
-    {{-- <link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embedbf21.json?url=https%3A%2F%2Fguardianmylife.com%2F" /> --}}
-    {{-- <link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embedb479?url=https%3A%2F%2Fguardianmylife.com%2F&amp;format=xml" /> --}}
-    <link rel="icon" type="image/png" sizes="32x32" href="/home/images/favicon.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/home/images/favicon.png">
-    {{-- <link rel="manifest" href="/home/wp-content/uploads/fbrfg/site.webmanifest"> --}}
-    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+
+    @include('layouts.home-header')
+
     @yield('style')
   </head>
   <body class="home page-template-default page page-id-139 wp-custom-logo elementor-default elementor-template-full-width elementor-kit-9 elementor-page elementor-page-139">
@@ -54,7 +26,7 @@
                     <div class="elementor-widget-wrap elementor-element-populated">
                       <div class="elementor-element elementor-element-526c813d elementor-icon-list--layout-inline elementor-align-right elementor-mobile-align-center elementor-widget__width-initial elementor-tablet-align-center elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="526c813d" data-element_type="widget" data-widget_type="icon-list.default">
                         <div class="elementor-widget-container">
-                          <link rel="stylesheet" href="/home/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css">
+                          <link rel="stylesheet" href="/home/css/widget-icon-list.min.css">
                           <ul class="elementor-icon-list-items elementor-inline-items">
                             <li class="elementor-icon-list-item elementor-inline-item">
                               <a href="https://www.instagram.com/GuardianMyLife" target="_blank">
@@ -178,7 +150,7 @@
                     <div class="elementor-widget-wrap elementor-element-populated">
                       <div class="elementor-element elementor-element-ecb275e elementor-nav-menu__align-center elementor-nav-menu--stretch elementor-widget__width-initial elementor-widget-tablet__width-auto includedarkmode  elementor-nav-menu--dropdown-tablet elementor-nav-menu__text-align-aside elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu" data-id="ecb275e" data-element_type="widget" data-settings="{&quot;full_width&quot;:&quot;stretch&quot;,&quot;layout&quot;:&quot;horizontal&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;svg class=\&quot;e-font-icon-svg e-fas-caret-down\&quot; viewBox=\&quot;0 0 320 512\&quot; xmlns=\&quot;http:\/\/www.w3.org\/2000\/svg\&quot;&gt;&lt;path d=\&quot;M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z\&quot;&gt;&lt;\/path&gt;&lt;\/svg&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;},&quot;toggle&quot;:&quot;burger&quot;}" data-widget_type="nav-menu.default">
                         <div class="elementor-widget-container">
-                          <link rel="stylesheet" href="/home/wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css">
+                          <link rel="stylesheet" href="/home/css/widget-nav-menu.min.css">
                           <nav class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-overline e--animation-grow">
                             <ul id="menu-1-ecb275e" class="elementor-nav-menu">
                               <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-139 current_page_item menu-item-257"><a href="/" aria-current="page" class="elementor-item elementor-item-active">Home</a></li>
@@ -259,7 +231,7 @@
                           <div class="elementor-button-wrapper">
                             <a class="elementor-button elementor-button-link elementor-size-sm" href="{{route('home.client.apply')}}">
                             <span class="elementor-button-content-wrapper">
-                            <span class="elementor-button-text">Request a Custom Quote</span>
+                            <span class="elementor-button-text">Quote</span>
                             </span>
                             </a>
                           </div>
@@ -311,8 +283,8 @@
                               <!-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1000"><a href="offices/index.html" class="elementor-item" tabindex="-1">Offices</a></li> -->
                               <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1001"><a href="#" class="elementor-item" tabindex="-1">Team</a></li>
                               <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1063"><a href="#" class="elementor-item" tabindex="-1">Agents</a></li>
-                              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1049"><a href="{{route('login')}}" class="elementor-item" tabindex="-1"><img src="/home/wp-content/uploads/2024/02/user-profile-filled-svgrepo-com.svg" class="_mi _before _svg" aria-hidden="true" alt="" width="800" height="800"/><span>Agent Login</span></a></li>
-                              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1062"><a href="{{route('home.client.apply')}}" class="elementor-item" tabindex="-1"><img loading="lazy" src="/home/wp-content/uploads/2024/02/icon-arrow-right-apply-to-work-with-ffl.svg" class="_mi _before _svg" aria-hidden="true" alt="" width="800" height="800"/><span>Apply to Work with GML</span></a></li>
+                              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1049"><a href="{{route('login')}}" class="elementor-item" tabindex="-1"><img src="/home/images/user-profile-filled-svgrepo-com.svg" class="_mi _before _svg" aria-hidden="true" alt="" width="25" height="25"/><span>Agent Login</span></a></li>
+                              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1062"><a href="{{route('home.client.apply')}}" class="elementor-item" tabindex="-1"><img loading="lazy" src="/home/images/icon-arrow-right-apply-to-work-with-ffl.svg" class="_mi _before _svg" aria-hidden="true" alt="" width="25" height="25"/><span>Apply to Work with GML</span></a></li>
                               <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-998"><a href="#" class="elementor-item" tabindex="-1">Contact Us</a></li>
                               <li class="socialicons menu-item menu-item-type-custom menu-item-object-custom menu-item-1006">
                                 <a class="elementor-item" tabindex="-1">
@@ -351,7 +323,7 @@
             <div class="elementor-element elementor-element-fbfd040 elementor-widget elementor-widget-image" data-id="fbfd040" data-element_type="widget" data-widget_type="image.default">
               <div class="elementor-widget-container">
                 <a href="#">
-                <img width="512" height="512" src="/home/wp-content/uploads/2024/02/agents-gradient-light-icon.png" class="attachment-full size-full wp-image-991" alt="" srcset="/home/wp-content/uploads/2024/02/agents-gradient-light-icon.png 512w, /home/wp-content/uploads/2024/02/agents-gradient-light-icon-300x300.png 300w, /home/wp-content/uploads/2024/02/agents-gradient-light-icon-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" />								</a>
+                <img width="512" height="512" src="/home/images/agents-gradient-light-icon.png" class="attachment-full size-full wp-image-991" alt="" srcset="/home/images/agents-gradient-light-icon.png 512w, /home/images/agents-gradient-light-icon-300x300.png 300w, /home/images/agents-gradient-light-icon-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" />								</a>
               </div>
             </div>
             <div class="elementor-element elementor-element-7b5917a elementor-widget elementor-widget-heading" data-id="7b5917a" data-element_type="widget" data-widget_type="heading.default">
@@ -380,7 +352,7 @@
             <div class="elementor-element elementor-element-5142933 elementor-widget elementor-widget-image" data-id="5142933" data-element_type="widget" data-widget_type="image.default">
               <div class="elementor-widget-container">
                 <a href="#">
-                <img width="512" height="512" src="/home/wp-content/uploads/2024/02/family-gradient-light.png" class="attachment-full size-full wp-image-990" alt="" srcset="/home/wp-content/uploads/2024/02/family-gradient-light.png 512w, /home/wp-content/uploads/2024/02/family-gradient-light-300x300.png 300w, /home/wp-content/uploads/2024/02/family-gradient-light-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" /></a>
+                <img width="512" height="512" src="/home/images/family-gradient-light.png" class="attachment-full size-full wp-image-990" alt="" srcset="/home/images/family-gradient-light.png 512w, /home/images/family-gradient-light-300x300.png 300w, /home/images/family-gradient-light-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" /></a>
               </div>
             </div>
             <div class="elementor-element elementor-element-6f81329 elementor-widget elementor-widget-heading" data-id="6f81329" data-element_type="widget" data-widget_type="heading.default">
@@ -753,61 +725,9 @@
         </div>
       </section>
     </footer>
-    <noscript><img height="1" width="1" style="display: none;" src="../www.facebook.com/trf2e0?id=714404116159626&amp;ev=PageView&amp;noscript=1&amp;cd%5Bpage_title%5D=Home&amp;cd%5Bpost_type%5D=page&amp;cd%5Bpost_id%5D=139&amp;cd%5Bplugin%5D=PixelYourSite&amp;cd%5Buser_role%5D=guest&amp;cd%5Bevent_url%5D=guardianmylife.com%2F" alt=""></noscript>
-    <link rel='stylesheet' id='e-animations-css' href='/home/wp-content/plugins/elementor/assets/lib/animations/animations.mindcff.css?ver=3.22.3' media='all' />
-    <script src="/home/wp-content/themes/hello-elementor/assets/js/hello-frontend.min324d.js?ver=3.1.0" id="hello-theme-frontend-js"></script>
-    <script id="gforms_recaptcha_recaptcha-js-extra">
-      var gforms_recaptcha_recaptcha_strings = {"site_key":"6LcsJYkpAAAAABTQWZpHlD1oPkRGrcaCcQ0dPAkl","ajaxurl":"https:\/\/guardianmylife.com\/home\/wp-admin\/admin-ajax.php","nonce":"f78d11413e"};
-    </script>
-    <script src="https://www.google.com/recaptcha/apiff13.js?render=6LcsJYkpAAAAABTQWZpHlD1oPkRGrcaCcQ0dPAkl&amp;ver=1.5.0" id="gforms_recaptcha_recaptcha-js"></script>
-    <script id="gforms_recaptcha_recaptcha-js-after">
-      (function($){grecaptcha.ready(function(){$('.grecaptcha-badge').css('visibility','hidden');});})(jQuery);
-    </script>
-    <script id="wpfront-scroll-top-js-extra">
-      var wpfront_scroll_top_data = {"data":{"css":"#wpfront-scroll-top-container{display:none;position:fixed;cursor:pointer;z-index:9999;opacity:0}#wpfront-scroll-top-container div.text-holder{padding:3px 10px;border-radius:3px;-webkit-border-radius:3px;-webkit-box-shadow:4px 4px 5px 0 rgba(50,50,50,.5);-moz-box-shadow:4px 4px 5px 0 rgba(50,50,50,.5);box-shadow:4px 4px 5px 0 rgba(50,50,50,.5)}#wpfront-scroll-top-container a{outline-style:none;box-shadow:none;text-decoration:none}#wpfront-scroll-top-container {right: 18px;bottom: 20px;}        #wpfront-scroll-top-container img {\n width: 35px;\n height: 35px;\n }\n ","html":"<div id=\"wpfront-scroll-top-container\"><img src=\"https:\/\/guardianmylife.com\/home\/wp-content\/uploads\/2024\/02\/up-chevron.png\" alt=\"back to top arrow\" title=\"\" \/><\/div>","data":{"hide_iframe":false,"button_fade_duration":0,"auto_hide":false,"auto_hide_after":2,"scroll_offset":150,"button_opacity":0.85,"button_action":"top","button_action_element_selector":"","button_action_container_selector":"html, body","button_action_element_offset":0,"scroll_duration":400}}};
-    </script>
-    <script src="/home/wp-content/plugins/wpfront-scroll-top/js/wpfront-scroll-top.min93a9.js?ver=2.2.10081" id="wpfront-scroll-top-js"></script>
-    <script src="/home/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min1576.js?ver=1.2.1" id="smartmenus-js"></script>
-    <script src="/home/wp-content/plugins/elementor/assets/lib/jquery-numerator/jquery-numerator.min3958.js?ver=0.2.1" id="jquery-numerator-js"></script>
-    <script src="/home/wp-content/plugins/elementor-pro/assets/lib/lottie/lottie.min3f90.js?ver=5.6.6" id="lottie-js"></script>
-    <script src="/home/wp-includes/js/imagesloaded.minbb93.js?ver=5.0.0" id="imagesloaded-js"></script>
-    <script src="/home/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min11d9.js?ver=3.21.3" id="elementor-pro-webpack-runtime-js"></script>
-    <script src="/home/wp-content/plugins/elementor/assets/js/webpack.runtime.mindcff.js?ver=3.22.3" id="elementor-webpack-runtime-js"></script>
-    <script src="/home/wp-content/plugins/elementor/assets/js/frontend-modules.mindcff.js?ver=3.22.3" id="elementor-frontend-modules-js"></script>
-    <script src="/home/wp-includes/js/dist/vendor/wp-polyfill-inert.min0226.js?ver=3.1.2" id="wp-polyfill-inert-js"></script>
-    <script src="/home/wp-includes/js/dist/vendor/regenerator-runtime.min6c85.js?ver=0.14.0" id="regenerator-runtime-js"></script>
-    <script src="/home/wp-includes/js/dist/vendor/wp-polyfill.min2c7c.js?ver=3.15.0" id="wp-polyfill-js"></script>
-    <script src="/home/wp-includes/js/dist/hooks.min2757.js?ver=2810c76e705dd1a53b18" id="wp-hooks-js"></script>
-    <script src="/home/wp-includes/js/dist/i18n.minc33c.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
-    <script id="wp-i18n-js-after">
-      wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
-    </script>
-    <script id="elementor-pro-frontend-js-before">
-      var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/guardianmylife.com\/home\/wp-admin\/admin-ajax.php","nonce":"28b33e7f25","urls":{"assets":"https:\/\/guardianmylife.com\/home\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/guardianmylife.com\/home\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/guardianmylife.com\/home\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
-    </script>
-    <script src="/home/wp-content/plugins/elementor-pro/assets/js/frontend.min11d9.js?ver=3.21.3" id="elementor-pro-frontend-js"></script>
-    <script src="/home/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min05da.js?ver=4.0.2" id="elementor-waypoints-js"></script>
-    <script src="/home/wp-includes/js/jquery/ui/core.min3f14.js?ver=1.13.2" id="jquery-ui-core-js"></script>
-    <script id="elementor-frontend-js-before">
-      var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.22.3","is_static":false,"experimentalFeatures":{"e_optimized_assets_loading":true,"e_optimized_css_loading":true,"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"container_grid":true,"e_swiper_latest":true,"e_onboarding":true,"theme_builder_v2":true,"hello-theme-header-footer":true,"home_screen":true,"ai-layout":true,"landing-pages":true,"form-submissions":true},"urls":{"assets":"https:\/\/guardianmylife.com\/home\/wp-content\/plugins\/elementor\/assets\/"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"body_background_background":"classic","active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","hello_header_logo_type":"logo","hello_header_menu_layout":"horizontal","hello_footer_logo_type":"logo"},"post":{"id":139,"title":"Mortgage%20Insurance%20%7C%20Final%20Expense%20Insurance%20%7C%20Family%20First%20Life","excerpt":"","featuredImage":"https:\/\/guardianmylife.com\/home\/wp-content\/uploads\/2024\/03\/family-first-life-featured-image-1024x538.jpg"}};
-    </script>
-    <script src="/home/wp-content/plugins/elementor/assets/js/frontend.mindcff.js?ver=3.22.3" id="elementor-frontend-js"></script>
-    <script src="/home/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min11d9.js?ver=3.21.3" id="pro-elements-handlers-js"></script>
-    <script src="/home/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min11d9.js?ver=3.21.3" id="e-sticky-js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script>
-      //phone number format
-      function phoneFormat(e)
-      {
-          var numbers = e.value.replace(/\D/g, ''),
-          char = {0:'(', 3:') ', 6:'-'};
-          e.value = '';
-          for(var i = 0; i < numbers.length; i++)
-          {
-              e.value += (char[i]||'') + numbers[i];
-          }
-      }
-    </script>
+
+    @include('layouts.home-footer')
+
     @yield('script')
   </body>
 </html>

@@ -18,7 +18,7 @@
           
           <div class="elementor-element elementor-element-73aa0aed elementor-headline--style-rotate elementor-hidden-mobile elementor-widget elementor-widget-animated-headline" data-id="73aa0aed" data-element_type="widget" data-settings="{&quot;headline_style&quot;:&quot;rotate&quot;,&quot;animation_type&quot;:&quot;blinds&quot;,&quot;rotating_text&quot;:&quot;Mortgage Protection.\nFinal Expense.\nIndexed Universal Life.\nFixed Indexed Annuities.&quot;,&quot;loop&quot;:&quot;yes&quot;,&quot;rotate_iteration_delay&quot;:2500}" data-widget_type="animated-headline.default">
             <div class="elementor-widget-container">
-              <link rel="stylesheet" href="/home/wp-content/plugins/elementor-pro/assets/css/widget-animated-headline.min.css">
+              <link rel="stylesheet" href="/home/assets/plugins/elementor-pro/assets/css/widget-animated-headline.min.css">
               <h2 class="elementor-headline elementor-headline-animation-type-blinds elementor-headline-letters">
                 <span class="elementor-headline-dynamic-wrapper elementor-headline-text-wrapper">
                 <span class="elementor-headline-dynamic-text elementor-headline-text-active">
@@ -91,7 +91,7 @@
         <div class="elementor-widget-wrap elementor-element-populated">
           <div class="elementor-element elementor-element-4212465e elementor-widget elementor-widget-image" data-id="4212465e" data-element_type="widget" data-widget_type="image.default">
             <div class="elementor-widget-container">
-              <img loading="lazy" decoding="async" width="512" height="512" src="/home/wp-content/uploads/2024/01/insurance-policy-icon-v1.png" class="attachment-full size-full wp-image-270" alt="" srcset="/home/wp-content/uploads/2024/01/insurance-policy-icon-v1.png 512w, /home/wp-content/uploads/2024/01/insurance-policy-icon-v1-300x300.png 300w, /home/wp-content/uploads/2024/01/insurance-policy-icon-v1-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" />													
+              <img loading="lazy" decoding="async" width="512" height="512" src="/home/assets/uploads/2024/01/insurance-policy-icon-v1.png" class="attachment-full size-full wp-image-270" alt="" srcset="/home/assets/uploads/2024/01/insurance-policy-icon-v1.png 512w, /home/assets/uploads/2024/01/insurance-policy-icon-v1-300x300.png 300w, /home/assets/uploads/2024/01/insurance-policy-icon-v1-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" />													
             </div>
           </div>
           <div class="elementor-element elementor-element-33ffa8ef elementor-widget__width-inherit elementor-widget-tablet__width-inherit elementor-widget-mobile__width-inherit elementor-invisible elementor-widget elementor-widget-counter" data-id="33ffa8ef" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;}" data-widget_type="counter.default">
@@ -117,7 +117,7 @@
         <div class="elementor-widget-wrap elementor-element-populated">
           <div class="elementor-element elementor-element-347d270f elementor-widget elementor-widget-image" data-id="347d270f" data-element_type="widget" data-widget_type="image.default">
             <div class="elementor-widget-container">
-              <img loading="lazy" decoding="async" width="512" height="512" src="/home/wp-content/uploads/2024/01/home-insurance-icon.png" class="attachment-full size-full wp-image-320" alt="" srcset="/home/wp-content/uploads/2024/01/home-insurance-icon.png 512w, /home/wp-content/uploads/2024/01/home-insurance-icon-300x300.png 300w, /home/wp-content/uploads/2024/01/home-insurance-icon-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" />													
+              <img loading="lazy" decoding="async" width="512" height="512" src="/home/assets/uploads/2024/01/home-insurance-icon.png" class="attachment-full size-full wp-image-320" alt="" srcset="/home/assets/uploads/2024/01/home-insurance-icon.png 512w, /home/assets/uploads/2024/01/home-insurance-icon-300x300.png 300w, /home/assets/uploads/2024/01/home-insurance-icon-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" />													
             </div>
           </div>
           <div class="elementor-element elementor-element-3683a11e elementor-widget__width-inherit elementor-widget-tablet__width-inherit elementor-widget-mobile__width-inherit elementor-invisible elementor-widget elementor-widget-counter" data-id="3683a11e" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;}" data-widget_type="counter.default">
@@ -142,7 +142,7 @@
         <div class="elementor-widget-wrap elementor-element-populated">
           <div class="elementor-element elementor-element-761c9a61 elementor-widget elementor-widget-image" data-id="761c9a61" data-element_type="widget" data-widget_type="image.default">
             <div class="elementor-widget-container">
-              <img loading="lazy" decoding="async" width="256" height="256" src="/home/wp-content/uploads/2024/01/network-family-icon.png" class="attachment-full size-full wp-image-313" alt="" srcset="/home/wp-content/uploads/2024/01/network-family-icon.png 256w, /home/wp-content/uploads/2024/01/network-family-icon-150x150.png 150w" sizes="(max-width: 256px) 100vw, 256px" />													
+              <img loading="lazy" decoding="async" width="256" height="256" src="/home/assets/uploads/2024/01/network-family-icon.png" class="attachment-full size-full wp-image-313" alt="" srcset="/home/assets/uploads/2024/01/network-family-icon.png 256w, /home/assets/uploads/2024/01/network-family-icon-150x150.png 150w" sizes="(max-width: 256px) 100vw, 256px" />													
             </div>
           </div>
           <div class="elementor-element elementor-element-615df24f elementor-widget__width-inherit elementor-widget-tablet__width-inherit elementor-widget-mobile__width-inherit elementor-invisible elementor-widget elementor-widget-counter" data-id="615df24f" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;}" data-widget_type="counter.default">
@@ -184,7 +184,7 @@
           </div>
           <div class="elementor-element elementor-element-11884c78 elementor-view-stacked elementor-position-left elementor-mobile-position-left elementor-shape-circle elementor-vertical-align-top elementor-invisible elementor-widget elementor-widget-icon-box" data-id="11884c78" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="icon-box.default">
             <div class="elementor-widget-container">
-              <link rel="stylesheet" href="/home/wp-content/plugins/elementor/assets/css/widget-icon-box.min.css">
+              <link rel="stylesheet" href="/home/assets/plugins/elementor/assets/css/widget-icon-box.min.css">
               <div class="elementor-icon-box-wrapper">
                 <div class="elementor-icon-box-icon">
                   <span  class="elementor-icon elementor-animation-">
@@ -231,7 +231,7 @@
         <div class="elementor-widget-wrap elementor-element-populated">
           <div class="elementor-element elementor-element-211267fd elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-image" data-id="211267fd" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="image.default">
             <div class="elementor-widget-container">
-              <img loading="lazy" decoding="async" width="550" height="864" src="/home/wp-content/uploads/2024/01/family-photo-v2.jpg" class="attachment-large size-large wp-image-334" alt="" srcset="/home/wp-content/uploads/2024/01/family-photo-v2.jpg 550w, /home/wp-content/uploads/2024/01/family-photo-v2-191x300.jpg 191w" sizes="(max-width: 550px) 100vw, 550px" />													
+              <img loading="lazy" decoding="async" width="550" height="864" src="/home/assets/uploads/2024/01/family-photo-v2.jpg" class="attachment-large size-large wp-image-334" alt="" srcset="/home/assets/uploads/2024/01/family-photo-v2.jpg 550w, /home/assets/uploads/2024/01/family-photo-v2-191x300.jpg 191w" sizes="(max-width: 550px) 100vw, 550px" />													
             </div>
           </div>
         </div>
@@ -278,7 +278,7 @@
                 .elementor-widget-image-box .elementor-image-box-content{width:100%}@media (min-width:768px){.elementor-widget-image-box.elementor-position-left .elementor-image-box-wrapper,.elementor-widget-image-box.elementor-position-right .elementor-image-box-wrapper{display:flex}.elementor-widget-image-box.elementor-position-right .elementor-image-box-wrapper{text-align:end;flex-direction:row-reverse}.elementor-widget-image-box.elementor-position-left .elementor-image-box-wrapper{text-align:start;flex-direction:row}.elementor-widget-image-box.elementor-position-top .elementor-image-box-img{margin:auto}.elementor-widget-image-box.elementor-vertical-align-top .elementor-image-box-wrapper{align-items:flex-start}.elementor-widget-image-box.elementor-vertical-align-middle .elementor-image-box-wrapper{align-items:center}.elementor-widget-image-box.elementor-vertical-align-bottom .elementor-image-box-wrapper{align-items:flex-end}}@media (max-width:767px){.elementor-widget-image-box .elementor-image-box-img{margin-left:auto!important;margin-right:auto!important;margin-bottom:15px}}.elementor-widget-image-box .elementor-image-box-img{display:inline-block}.elementor-widget-image-box .elementor-image-box-title a{color:inherit}.elementor-widget-image-box .elementor-image-box-wrapper{text-align:center}.elementor-widget-image-box .elementor-image-box-description{margin:0}
               </style>
               <div class="elementor-image-box-wrapper">
-                <figure class="elementor-image-box-img"><a href="#" tabindex="-1"><img loading="lazy" decoding="async" width="512" height="512" src="/home/wp-content/uploads/2024/01/home-insurance-icon.png" class="attachment-full size-full wp-image-320" alt="" srcset="/home/wp-content/uploads/2024/01/home-insurance-icon.png 512w, /home/wp-content/uploads/2024/01/home-insurance-icon-300x300.png 300w, /home/wp-content/uploads/2024/01/home-insurance-icon-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" /></a></figure>
+                <figure class="elementor-image-box-img"><a href="#" tabindex="-1"><img loading="lazy" decoding="async" width="512" height="512" src="/home/assets/uploads/2024/01/home-insurance-icon.png" class="attachment-full size-full wp-image-320" alt="" srcset="/home/assets/uploads/2024/01/home-insurance-icon.png 512w, /home/assets/uploads/2024/01/home-insurance-icon-300x300.png 300w, /home/assets/uploads/2024/01/home-insurance-icon-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" /></a></figure>
                 <div class="elementor-image-box-content">
                   <div class="elementor-image-box-title"><a href="#">Mortgage Protection</a></div>
                   <p class="elementor-image-box-description">Mortgage protection insurance is a way to protect one of your most valuable assets in the event of a death. Most terms are designed to give you a full return of premium if you outlive the policy. With mortgage life insurance protection, in the event of a death, the mortgage will be paid in full, so your family can keep the house. <a href="#"><span style="color:#ED1C24">Contact us to learn more</span></a>.</p>
@@ -294,7 +294,7 @@
           <div class="elementor-element elementor-element-60cf8e6 elementor-position-top elementor-widget elementor-widget-image-box" data-id="60cf8e6" data-element_type="widget" data-widget_type="image-box.default">
             <div class="elementor-widget-container">
               <div class="elementor-image-box-wrapper">
-                <figure class="elementor-image-box-img"><a href="#" tabindex="-1"><img loading="lazy" decoding="async" width="512" height="512" src="/home/wp-content/uploads/2024/01/insurance-policy-icon-v1.png" class="attachment-full size-full wp-image-270" alt="" srcset="/home/wp-content/uploads/2024/01/insurance-policy-icon-v1.png 512w, /home/wp-content/uploads/2024/01/insurance-policy-icon-v1-300x300.png 300w, /home/wp-content/uploads/2024/01/insurance-policy-icon-v1-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" /></a></figure>
+                <figure class="elementor-image-box-img"><a href="#" tabindex="-1"><img loading="lazy" decoding="async" width="512" height="512" src="/home/assets/uploads/2024/01/insurance-policy-icon-v1.png" class="attachment-full size-full wp-image-270" alt="" srcset="/home/assets/uploads/2024/01/insurance-policy-icon-v1.png 512w, /home/assets/uploads/2024/01/insurance-policy-icon-v1-300x300.png 300w, /home/assets/uploads/2024/01/insurance-policy-icon-v1-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" /></a></figure>
                 <div class="elementor-image-box-content">
                   <div class="elementor-image-box-title"><a href="#">Final Expense</a></div>
                   <p class="elementor-image-box-description">Final Expense insurance will cover you for life. With final expense insurance, prices are locked and will never increase nor will your policy end. These types of policies are designed to make sure funeral and other end of life expenses are covered. <a href="#"><span style="color:#ED1C24">Contact us to learn more</span></a>.</p>
@@ -310,7 +310,7 @@
           <div class="elementor-element elementor-element-2e32db1b elementor-position-top elementor-widget elementor-widget-image-box" data-id="2e32db1b" data-element_type="widget" data-widget_type="image-box.default">
             <div class="elementor-widget-container">
               <div class="elementor-image-box-wrapper">
-                <figure class="elementor-image-box-img"><a href="#" tabindex="-1"><img loading="lazy" decoding="async" width="512" height="512" src="/home/wp-content/uploads/2024/01/insurance-price-logo.png" class="attachment-full size-full wp-image-285" alt="" srcset="/home/wp-content/uploads/2024/01/insurance-price-logo.png 512w, /home/wp-content/uploads/2024/01/insurance-price-logo-300x300.png 300w, /home/wp-content/uploads/2024/01/insurance-price-logo-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" /></a></figure>
+                <figure class="elementor-image-box-img"><a href="#" tabindex="-1"><img loading="lazy" decoding="async" width="512" height="512" src="/home/assets/uploads/2024/01/insurance-price-logo.png" class="attachment-full size-full wp-image-285" alt="" srcset="/home/assets/uploads/2024/01/insurance-price-logo.png 512w, /home/assets/uploads/2024/01/insurance-price-logo-300x300.png 300w, /home/assets/uploads/2024/01/insurance-price-logo-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" /></a></figure>
                 <div class="elementor-image-box-content">
                   <div class="elementor-image-box-title"><a href="#">Indexed Universal Life</a></div>
                   <p class="elementor-image-box-description">
@@ -329,7 +329,7 @@
       <div class="elementor-background-overlay"></div>
       <div class="elementor-element elementor-element-cbb1a6b elementor-position-top elementor-widget elementor-widget-image-box" data-id="cbb1a6b" data-element_type="widget" data-widget_type="image-box.default">
       <div class="elementor-widget-container">
-      <div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="#" tabindex="-1"><img loading="lazy" decoding="async" width="512" height="512" src="/home/wp-content/uploads/2024/01/insurance-check-icon.png" class="attachment-full size-full wp-image-319" alt="" srcset="/home/wp-content/uploads/2024/01/insurance-check-icon.png 512w, /home/wp-content/uploads/2024/01/insurance-check-icon-300x300.png 300w, /home/wp-content/uploads/2024/01/insurance-check-icon-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" /></a></figure><div class="elementor-image-box-content"><div class="elementor-image-box-title"><a href="#">Fixed Indexed Annuities</a></div><p class="elementor-image-box-description">FIAs credit interest using formulas based on changes in specific indexes. The crediting method determines how much interest is credited. The rate and frequency of the credits depend upon the terms and conditions of the FIA contract. <a href="#"><span style="color:#ED1C24">Contact us to learn more</span></a>.</p></div></div>		</div>
+      <div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="#" tabindex="-1"><img loading="lazy" decoding="async" width="512" height="512" src="/home/assets/uploads/2024/01/insurance-check-icon.png" class="attachment-full size-full wp-image-319" alt="" srcset="/home/assets/uploads/2024/01/insurance-check-icon.png 512w, /home/assets/uploads/2024/01/insurance-check-icon-300x300.png 300w, /home/assets/uploads/2024/01/insurance-check-icon-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" /></a></figure><div class="elementor-image-box-content"><div class="elementor-image-box-title"><a href="#">Fixed Indexed Annuities</a></div><p class="elementor-image-box-description">FIAs credit interest using formulas based on changes in specific indexes. The crediting method determines how much interest is credited. The rate and frequency of the credits depend upon the terms and conditions of the FIA contract. <a href="#"><span style="color:#ED1C24">Contact us to learn more</span></a>.</p></div></div>		</div>
       </div>
       </div>
       </div>
@@ -341,7 +341,7 @@
         <div class="elementor-element elementor-element-5054f200 elementor-widget elementor-widget-image" data-id="5054f200" data-element_type="widget" data-widget_type="image.default">
           <div class="elementor-widget-container">
             <a href="#">
-            <img loading="lazy" decoding="async" width="512" height="512" src="/home/wp-content/uploads/2024/02/agents-gradient-light-icon.png" class="attachment-full size-full wp-image-991" alt="" srcset="/home/wp-content/uploads/2024/02/agents-gradient-light-icon.png 512w, /home/wp-content/uploads/2024/02/agents-gradient-light-icon-300x300.png 300w, /home/wp-content/uploads/2024/02/agents-gradient-light-icon-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" />								</a>
+            <img loading="lazy" decoding="async" width="512" height="512" src="/home/assets/uploads/2024/02/agents-gradient-light-icon.png" class="attachment-full size-full wp-image-991" alt="" srcset="/home/assets/uploads/2024/02/agents-gradient-light-icon.png 512w, /home/assets/uploads/2024/02/agents-gradient-light-icon-300x300.png 300w, /home/assets/uploads/2024/02/agents-gradient-light-icon-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" />								</a>
           </div>
         </div>
         <div class="elementor-element elementor-element-5297e21f elementor-widget elementor-widget-heading" data-id="5297e21f" data-element_type="widget" data-widget_type="heading.default">
@@ -370,7 +370,7 @@
         <div class="elementor-element elementor-element-4dfdb3f7 animated-slow elementor-invisible elementor-widget elementor-widget-image" data-id="4dfdb3f7" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;pulse&quot;,&quot;_animation_tablet&quot;:&quot;pulse&quot;}" data-widget_type="image.default">
           <div class="elementor-widget-container">
             <a href="#">
-            <img loading="lazy" decoding="async" width="512" height="512" src="/home/wp-content/uploads/2024/02/family-gradient-light.png" class="attachment-full size-full wp-image-990" alt="" srcset="/home/wp-content/uploads/2024/02/family-gradient-light.png 512w, /home/wp-content/uploads/2024/02/family-gradient-light-300x300.png 300w, /home/wp-content/uploads/2024/02/family-gradient-light-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" />								</a>
+            <img loading="lazy" decoding="async" width="512" height="512" src="/home/assets/uploads/2024/02/family-gradient-light.png" class="attachment-full size-full wp-image-990" alt="" srcset="/home/assets/uploads/2024/02/family-gradient-light.png 512w, /home/assets/uploads/2024/02/family-gradient-light-300x300.png 300w, /home/assets/uploads/2024/02/family-gradient-light-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" />								</a>
           </div>
         </div>
         <div class="elementor-element elementor-element-727ee301 elementor-widget elementor-widget-heading" data-id="727ee301" data-element_type="widget" data-widget_type="heading.default">
@@ -408,7 +408,7 @@
               &#8220;Today my coworker and I went to a client who had a small $43 a month policy graded. We shopped around for her and changed her to whole life policy for the same benefit and saved her money on top of it. She thanked us greatly which makes my day.&#8221;						
             </div>
           </div>
-          <div class="elementor-element elementor-element-d840b2f elementor-align-right elementor-widget elementor-widget-lottie" data-id="d840b2f" data-element_type="widget" data-settings="{&quot;source_json&quot;:{&quot;url&quot;:&quot;https:\/\/familyfirstlife.com\/wp-content\/uploads\/2024\/02\/starsgray.json&quot;,&quot;id&quot;:1077,&quot;size&quot;:&quot;&quot;,&quot;alt&quot;:&quot;&quot;,&quot;source&quot;:&quot;library&quot;},&quot;source&quot;:&quot;media_file&quot;,&quot;caption_source&quot;:&quot;none&quot;,&quot;link_to&quot;:&quot;none&quot;,&quot;trigger&quot;:&quot;arriving_to_viewport&quot;,&quot;viewport&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:0,&quot;end&quot;:100}},&quot;play_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1,&quot;sizes&quot;:[]},&quot;start_point&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:0,&quot;sizes&quot;:[]},&quot;end_point&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:100,&quot;sizes&quot;:[]},&quot;renderer&quot;:&quot;svg&quot;}" data-widget_type="lottie.default">
+          <div class="elementor-element elementor-element-d840b2f elementor-align-right elementor-widget elementor-widget-lottie" data-id="d840b2f" data-element_type="widget" data-settings="{&quot;source_json&quot;:{&quot;url&quot;:&quot;https:\/\/familyfirstlife.com\/assets\/uploads\/2024\/02\/starsgray.json&quot;,&quot;id&quot;:1077,&quot;size&quot;:&quot;&quot;,&quot;alt&quot;:&quot;&quot;,&quot;source&quot;:&quot;library&quot;},&quot;source&quot;:&quot;media_file&quot;,&quot;caption_source&quot;:&quot;none&quot;,&quot;link_to&quot;:&quot;none&quot;,&quot;trigger&quot;:&quot;arriving_to_viewport&quot;,&quot;viewport&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:0,&quot;end&quot;:100}},&quot;play_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1,&quot;sizes&quot;:[]},&quot;start_point&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:0,&quot;sizes&quot;:[]},&quot;end_point&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:100,&quot;sizes&quot;:[]},&quot;renderer&quot;:&quot;svg&quot;}" data-widget_type="lottie.default">
             <div class="elementor-widget-container">
               <style>/*! elementor-pro - v3.21.0 - 20-05-2024 */
                 .e-lottie__container{display:inline-block;max-width:var(--lottie-container-max-width);width:var(--lottie-container-width);opacity:var(--lottie-container-opacity)}.e-lottie__container:hover{opacity:var(--lottie-container-opacity-hover);transition-duration:var(--lottie-container-transition-duration-hover)}.e-lottie__container svg,.e-lottie__container svg *{transition:none!important}.e-lottie__caption{color:var(--caption-color);margin-top:var(--caption-margin-top);text-align:var(--caption-text-align)}
@@ -420,7 +420,7 @@
           </div>
           <div class="elementor-element elementor-element-2548a7b elementor-testimonial--align-right elementor-testimonial--mobile-align-right elementor-testimonial--tablet-align-right elementor-testimonial--skin-default elementor-testimonial--layout-image_inline elementor-widget elementor-widget-testimonial-carousel" data-id="2548a7b" data-element_type="widget" data-settings="{&quot;slides_per_view&quot;:&quot;1&quot;,&quot;slides_to_scroll&quot;:&quot;1&quot;,&quot;speed&quot;:800,&quot;space_between&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0,&quot;sizes&quot;:[]},&quot;space_between_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;space_between_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]}}" data-widget_type="testimonial-carousel.default">
             <div class="elementor-widget-container">
-              <link rel="stylesheet" href="/home/wp-content/plugins/elementor-pro/assets/css/widget-carousel.min.css">
+              <link rel="stylesheet" href="/home/assets/plugins/elementor-pro/assets/css/widget-carousel.min.css">
               <div class="elementor-swiper">
                 <div class="elementor-main-swiper swiper">
                   <div class="swiper-wrapper">
@@ -428,7 +428,7 @@
                       <div class="elementor-testimonial">
                         <div class="elementor-testimonial__footer">
                           <div class="elementor-testimonial__image">
-                            <img decoding="async" src="/home/wp-content/uploads/2024/02/google-avatar.png" alt="Matt Rosenberg">
+                            <img decoding="async" src="/home/assets/uploads/2024/02/google-avatar.png" alt="Matt Rosenberg">
                           </div>
                           <cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Matt Rosenberg</span><span class="elementor-testimonial__title"><em>Google Reviews</em></span></cite>			
                         </div>
@@ -485,7 +485,7 @@
                   <div class="elementor-element elementor-element-75bbb1b elementor-widget elementor-widget-image" data-id="75bbb1b" data-element_type="widget" data-widget_type="image.default">
                     <div class="elementor-widget-container">
                       <a href="#" target="_blank">
-                      <img loading="lazy" decoding="async" width="517" height="103" src="/home/wp-content/uploads/2024/01/americo-logo-light.png" class="attachment-large size-large wp-image-294" alt="" srcset="/home/wp-content/uploads/2024/01/americo-logo-light.png 517w, /home/wp-content/uploads/2024/01/americo-logo-light-300x60.png 300w" sizes="(max-width: 517px) 100vw, 517px" />								</a>
+                      <img loading="lazy" decoding="async" width="517" height="103" src="/home/assets/uploads/2024/01/americo-logo-light.png" class="attachment-large size-large wp-image-294" alt="" srcset="/home/assets/uploads/2024/01/americo-logo-light.png 517w, /home/assets/uploads/2024/01/americo-logo-light-300x60.png 300w" sizes="(max-width: 517px) 100vw, 517px" />								</a>
                     </div>
                   </div>
                 </div>
@@ -496,7 +496,7 @@
                   <div class="elementor-element elementor-element-bf02e75 elementor-widget elementor-widget-image" data-id="bf02e75" data-element_type="widget" data-widget_type="image.default">
                     <div class="elementor-widget-container">
                       <a href="#" target="_blank">
-                      <img loading="lazy" decoding="async" width="800" height="149" src="/home/wp-content/uploads/2024/02/ethos-logo-white.png" class="attachment-large size-large wp-image-654" alt="" srcset="/home/wp-content/uploads/2024/02/ethos-logo-white.png 800w, /home/wp-content/uploads/2024/02/ethos-logo-white-300x56.png 300w, /home/wp-content/uploads/2024/02/ethos-logo-white-768x143.png 768w" sizes="(max-width: 800px) 100vw, 800px" /></a>
+                      <img loading="lazy" decoding="async" width="800" height="149" src="/home/assets/uploads/2024/02/ethos-logo-white.png" class="attachment-large size-large wp-image-654" alt="" srcset="/home/assets/uploads/2024/02/ethos-logo-white.png 800w, /home/assets/uploads/2024/02/ethos-logo-white-300x56.png 300w, /home/assets/uploads/2024/02/ethos-logo-white-768x143.png 768w" sizes="(max-width: 800px) 100vw, 800px" /></a>
                     </div>
                   </div>
                 </div>
@@ -507,7 +507,7 @@
                   <div class="elementor-element elementor-element-efe55fc elementor-widget elementor-widget-image" data-id="efe55fc" data-element_type="widget" data-widget_type="image.default">
                     <div class="elementor-widget-container">
                       <a href="#" target="_blank">
-                      <img loading="lazy" decoding="async" width="800" height="413" src="/home/wp-content/uploads/2024/02/foresters-financial-logo.png" class="attachment-large size-large wp-image-657" alt="" srcset="/home/wp-content/uploads/2024/02/foresters-financial-logo.png 800w, /home/wp-content/uploads/2024/02/foresters-financial-logo-300x155.png 300w, /home/wp-content/uploads/2024/02/foresters-financial-logo-768x396.png 768w" sizes="(max-width: 800px) 100vw, 800px" />								</a>
+                      <img loading="lazy" decoding="async" width="800" height="413" src="/home/assets/uploads/2024/02/foresters-financial-logo.png" class="attachment-large size-large wp-image-657" alt="" srcset="/home/assets/uploads/2024/02/foresters-financial-logo.png 800w, /home/assets/uploads/2024/02/foresters-financial-logo-300x155.png 300w, /home/assets/uploads/2024/02/foresters-financial-logo-768x396.png 768w" sizes="(max-width: 800px) 100vw, 800px" />								</a>
                     </div>
                   </div>
                 </div>
@@ -518,7 +518,7 @@
                   <div class="elementor-element elementor-element-802c126 elementor-widget elementor-widget-image" data-id="802c126" data-element_type="widget" data-widget_type="image.default">
                     <div class="elementor-widget-container">
                       <a href="#" target="_blank">
-                      <img loading="lazy" decoding="async" width="800" height="450" src="/home/wp-content/uploads/2024/02/Mutual-of-Omaha-logo-white.png" class="attachment-large size-large wp-image-665" alt="" srcset="/home/wp-content/uploads/2024/02/Mutual-of-Omaha-logo-white.png 800w, /home/wp-content/uploads/2024/02/Mutual-of-Omaha-logo-white-300x169.png 300w, /home/wp-content/uploads/2024/02/Mutual-of-Omaha-logo-white-768x432.png 768w" sizes="(max-width: 800px) 100vw, 800px" /></a>
+                      <img loading="lazy" decoding="async" width="800" height="450" src="/home/assets/uploads/2024/02/Mutual-of-Omaha-logo-white.png" class="attachment-large size-large wp-image-665" alt="" srcset="/home/assets/uploads/2024/02/Mutual-of-Omaha-logo-white.png 800w, /home/assets/uploads/2024/02/Mutual-of-Omaha-logo-white-300x169.png 300w, /home/assets/uploads/2024/02/Mutual-of-Omaha-logo-white-768x432.png 768w" sizes="(max-width: 800px) 100vw, 800px" /></a>
                     </div>
                   </div>
                 </div>
@@ -529,7 +529,7 @@
                   <div class="elementor-element elementor-element-cbad606 elementor-widget elementor-widget-image" data-id="cbad606" data-element_type="widget" data-widget_type="image.default">
                     <div class="elementor-widget-container">
                       <a href="#" target="_blank">
-                      <img loading="lazy" decoding="async" width="640" height="360" src="/home/wp-content/uploads/2024/02/prospertiy-life-group-logo-white.png" class="attachment-large size-large wp-image-647" alt="" srcset="/home/wp-content/uploads/2024/02/prospertiy-life-group-logo-white.png 640w, /home/wp-content/uploads/2024/02/prospertiy-life-group-logo-white-300x169.png 300w" sizes="(max-width: 640px) 100vw, 640px" /></a>
+                      <img loading="lazy" decoding="async" width="640" height="360" src="/home/assets/uploads/2024/02/prospertiy-life-group-logo-white.png" class="attachment-large size-large wp-image-647" alt="" srcset="/home/assets/uploads/2024/02/prospertiy-life-group-logo-white.png 640w, /home/assets/uploads/2024/02/prospertiy-life-group-logo-white-300x169.png 300w" sizes="(max-width: 640px) 100vw, 640px" /></a>
                     </div>
                   </div>
                 </div>
@@ -544,7 +544,7 @@
                   <div class="elementor-element elementor-element-d3909b8 elementor-widget elementor-widget-image" data-id="d3909b8" data-element_type="widget" data-widget_type="image.default">
                     <div class="elementor-widget-container">
                       <a href="#" target="_blank">
-                      <img loading="lazy" decoding="async" width="800" height="500" src="/home/wp-content/uploads/2024/01/Transamerica-Logo-light.png" class="attachment-large size-large wp-image-281" alt="" srcset="/home/wp-content/uploads/2024/01/Transamerica-Logo-light.png 1024w, /home/wp-content/uploads/2024/01/Transamerica-Logo-light-300x188.png 300w, /home/wp-content/uploads/2024/01/Transamerica-Logo-light-768x480.png 768w" sizes="(max-width: 800px) 100vw, 800px" /></a>
+                      <img loading="lazy" decoding="async" width="800" height="500" src="/home/assets/uploads/2024/01/Transamerica-Logo-light.png" class="attachment-large size-large wp-image-281" alt="" srcset="/home/assets/uploads/2024/01/Transamerica-Logo-light.png 1024w, /home/assets/uploads/2024/01/Transamerica-Logo-light-300x188.png 300w, /home/assets/uploads/2024/01/Transamerica-Logo-light-768x480.png 768w" sizes="(max-width: 800px) 100vw, 800px" /></a>
                     </div>
                   </div>
                 </div>
@@ -612,7 +612,7 @@
                   <div class="elementor-element elementor-element-f6c376e elementor-widget elementor-widget-image" data-id="f6c376e" data-element_type="widget" data-widget_type="image.default">
                     <div class="elementor-widget-container">
                       <a href="#" target="_blank">
-                      <img loading="lazy" decoding="async" width="517" height="103" src="/home/wp-content/uploads/2024/01/americo-logo-light.png" class="attachment-large size-large wp-image-294" alt="" srcset="/home/wp-content/uploads/2024/01/americo-logo-light.png 517w, /home/wp-content/uploads/2024/01/americo-logo-light-300x60.png 300w" sizes="(max-width: 517px) 100vw, 517px" />								</a>
+                      <img loading="lazy" decoding="async" width="517" height="103" src="/home/assets/uploads/2024/01/americo-logo-light.png" class="attachment-large size-large wp-image-294" alt="" srcset="/home/assets/uploads/2024/01/americo-logo-light.png 517w, /home/assets/uploads/2024/01/americo-logo-light-300x60.png 300w" sizes="(max-width: 517px) 100vw, 517px" />								</a>
                     </div>
                   </div>
                 </div>
@@ -622,7 +622,7 @@
                   <div class="elementor-element elementor-element-1269df2 elementor-widget elementor-widget-image" data-id="1269df2" data-element_type="widget" data-widget_type="image.default">
                     <div class="elementor-widget-container">
                       <a href="#" target="_blank">
-                      <img loading="lazy" decoding="async" width="800" height="413" src="/home/wp-content/uploads/2024/02/foresters-financial-logo.png" class="attachment-large size-large wp-image-657" alt="" srcset="/home/wp-content/uploads/2024/02/foresters-financial-logo.png 800w, /home/wp-content/uploads/2024/02/foresters-financial-logo-300x155.png 300w, /home/wp-content/uploads/2024/02/foresters-financial-logo-768x396.png 768w" sizes="(max-width: 800px) 100vw, 800px" />								</a>
+                      <img loading="lazy" decoding="async" width="800" height="413" src="/home/assets/uploads/2024/02/foresters-financial-logo.png" class="attachment-large size-large wp-image-657" alt="" srcset="/home/assets/uploads/2024/02/foresters-financial-logo.png 800w, /home/assets/uploads/2024/02/foresters-financial-logo-300x155.png 300w, /home/assets/uploads/2024/02/foresters-financial-logo-768x396.png 768w" sizes="(max-width: 800px) 100vw, 800px" />								</a>
                     </div>
                   </div>
                 </div>
@@ -632,7 +632,7 @@
                   <div class="elementor-element elementor-element-eed7c4a elementor-widget elementor-widget-image" data-id="eed7c4a" data-element_type="widget" data-widget_type="image.default">
                     <div class="elementor-widget-container">
                       <a href="#" target="_blank">
-                      <img loading="lazy" decoding="async" width="800" height="500" src="/home/wp-content/uploads/2024/01/Transamerica-Logo-light.png" class="attachment-large size-large wp-image-281" alt="" srcset="/home/wp-content/uploads/2024/01/Transamerica-Logo-light.png 1024w, /home/wp-content/uploads/2024/01/Transamerica-Logo-light-300x188.png 300w, /home/wp-content/uploads/2024/01/Transamerica-Logo-light-768x480.png 768w" sizes="(max-width: 800px) 100vw, 800px" /></a>
+                      <img loading="lazy" decoding="async" width="800" height="500" src="/home/assets/uploads/2024/01/Transamerica-Logo-light.png" class="attachment-large size-large wp-image-281" alt="" srcset="/home/assets/uploads/2024/01/Transamerica-Logo-light.png 1024w, /home/assets/uploads/2024/01/Transamerica-Logo-light-300x188.png 300w, /home/assets/uploads/2024/01/Transamerica-Logo-light-768x480.png 768w" sizes="(max-width: 800px) 100vw, 800px" /></a>
                     </div>
                   </div>
                 </div>
@@ -642,7 +642,7 @@
                   <div class="elementor-element elementor-element-f650cf9 elementor-widget elementor-widget-image" data-id="f650cf9" data-element_type="widget" data-widget_type="image.default">
                     <div class="elementor-widget-container">
                       <a href="#" target="_blank">
-                      <img loading="lazy" decoding="async" width="736" height="372" src="/home/wp-content/uploads/2024/02/columbus-logo.png" class="attachment-large size-large wp-image-678" alt="" srcset="/home/wp-content/uploads/2024/02/columbus-logo.png 736w, /home/wp-content/uploads/2024/02/columbus-logo-300x152.png 300w" sizes="(max-width: 736px) 100vw, 736px" /></a>
+                      <img loading="lazy" decoding="async" width="736" height="372" src="/home/assets/uploads/2024/02/columbus-logo.png" class="attachment-large size-large wp-image-678" alt="" srcset="/home/assets/uploads/2024/02/columbus-logo.png 736w, /home/assets/uploads/2024/02/columbus-logo-300x152.png 300w" sizes="(max-width: 736px) 100vw, 736px" /></a>
                     </div>
                   </div>
                 </div>
@@ -664,7 +664,7 @@
         <div class="elementor-widget-wrap elementor-element-populated">
           <div class="elementor-element elementor-element-6fe70612 elementor-widget elementor-widget-image" data-id="6fe70612" data-element_type="widget" data-widget_type="image.default">
             <div class="elementor-widget-container">
-              <img loading="lazy" decoding="async" width="1920" height="912" src="/home/wp-content/uploads/2024/01/6572b31f5297f.jpg" class="attachment-full size-full wp-image-306" alt="" srcset="/home/wp-content/uploads/2024/01/6572b31f5297f.jpeg 1920w, /home/wp-content/uploads/2024/01/6572b31f5297f-300x143.jpeg 300w, /home/wp-content/uploads/2024/01/6572b31f5297f-1024x486.jpeg 1024w, /home/wp-content/uploads/2024/01/6572b31f5297f-768x365.jpeg 768w, /home/wp-content/uploads/2024/01/6572b31f5297f-1536x730.jpeg 1536w" sizes="(max-width: 1920px) 100vw, 1920px" />													
+              <img loading="lazy" decoding="async" width="1920" height="912" src="/home/assets/uploads/2024/01/6572b31f5297f.jpg" class="attachment-full size-full wp-image-306" alt="" srcset="/home/assets/uploads/2024/01/6572b31f5297f.jpeg 1920w, /home/assets/uploads/2024/01/6572b31f5297f-300x143.jpeg 300w, /home/assets/uploads/2024/01/6572b31f5297f-1024x486.jpeg 1024w, /home/assets/uploads/2024/01/6572b31f5297f-768x365.jpeg 768w, /home/assets/uploads/2024/01/6572b31f5297f-1536x730.jpeg 1536w" sizes="(max-width: 1920px) 100vw, 1920px" />													
             </div>
           </div>
         </div>
@@ -807,7 +807,7 @@
         <div class="elementor-widget-wrap elementor-element-populated">
           <div class="elementor-element elementor-element-41e14436 elementor-widget elementor-widget-image" data-id="41e14436" data-element_type="widget" data-widget_type="image.default">
             <div class="elementor-widget-container">
-              <img loading="lazy" decoding="async" width="1920" height="912" src="/home/wp-content/uploads/2024/01/6572b31f5297f.jpg" class="attachment-full size-full wp-image-306" alt="" srcset="/home/wp-content/uploads/2024/01/6572b31f5297f.jpeg 1920w, /home/wp-content/uploads/2024/01/6572b31f5297f-300x143.jpeg 300w, /home/wp-content/uploads/2024/01/6572b31f5297f-1024x486.jpeg 1024w, /home/wp-content/uploads/2024/01/6572b31f5297f-768x365.jpeg 768w, /home/wp-content/uploads/2024/01/6572b31f5297f-1536x730.jpeg 1536w" sizes="(max-width: 1920px) 100vw, 1920px" />													
+              <img loading="lazy" decoding="async" width="1920" height="912" src="/home/assets/uploads/2024/01/6572b31f5297f.jpg" class="attachment-full size-full wp-image-306" alt="" srcset="/home/assets/uploads/2024/01/6572b31f5297f.jpeg 1920w, /home/assets/uploads/2024/01/6572b31f5297f-300x143.jpeg 300w, /home/assets/uploads/2024/01/6572b31f5297f-1024x486.jpeg 1024w, /home/assets/uploads/2024/01/6572b31f5297f-768x365.jpeg 768w, /home/assets/uploads/2024/01/6572b31f5297f-1536x730.jpeg 1536w" sizes="(max-width: 1920px) 100vw, 1920px" />													
             </div>
           </div>
         </div>

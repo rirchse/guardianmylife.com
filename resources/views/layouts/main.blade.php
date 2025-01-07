@@ -193,10 +193,18 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="{{route('blog.index')}}" class="nav-link">
-              <i class="fa fa-address-book" aria-hidden="true"></i>
-              <p> Blog </p>
+            <a href="#" class="nav-link">
+              <i class="fa fa-blog" aria-hidden="true"></i>
+              <p> Blog  <i class="right fas fa-angle-left"></i></p>
             </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a class="nav-link" href="{{route('blog.create')}}">Add Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{route('blog.index')}}">View Blog</a>
+              </li>
+            </ul>
           </li>  
           @endif
           @if(Auth::user()->role != 3)

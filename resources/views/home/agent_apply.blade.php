@@ -1,8 +1,8 @@
 @extends('layouts.homepage')
 @section('style')
-<link rel='stylesheet' id='elementor-post-361-css' href='/home/wp-content/uploads/elementor/css/post-361bfc4.css?ver=1720647533' media='all' />
-<link rel='stylesheet' id='gform_basic-css' href='/home/wp-content/plugins/gravityforms/assets/css/dist/basic.minfae6.css?ver=2.8.14' media='all' />
-<link rel='stylesheet' id='gform_theme-css' href='/home/wp-content/plugins/gravityforms/assets/css/dist/theme.minfae6.css?ver=2.8.14' media='all' />
+<link rel='stylesheet' id='elementor-post-361-css' href='/home/css/post-361bfc4.css?ver=1720647533' media='all' />
+<link rel='stylesheet' id='gform_basic-css' href='/home/css/basic.minfae6.css?ver=2.8.14' media='all' />
+<link rel='stylesheet' id='gform_theme-css' href='/home/css/theme.minfae6.css?ver=2.8.14' media='all' />
 <style>
    .input-radio{transform: scale(1.5); margin-right:15px }
 </style>

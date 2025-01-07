@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\FileController;
 use App\Models\Blog;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 use Session;
 use Auth;
 use File;
@@ -51,6 +52,12 @@ class BlogController extends Controller
     {
       $data['status'] = 'Unpublished';
     }
+    
+    $slug_array = explode(' ', $data['title']);
+    $slug = implode('-', $slug_array);
+    $xslug = Blog::where('slug', $slug)->exists();
+    $slug = $xslug ? $slug.'-'.time() : $slug;
+    $data['slug'] = $slug;
 
     $data['created_by'] = Auth::id();
 
@@ -115,6 +122,21 @@ class BlogController extends Controller
     {
       $data['status'] = 'Unpublished';
     }
+
+    if(isset($data['files']))
+    {
+      unset($data['files']);
+    }
+
+    if($data['title'] != $blog->title)
+    {
+      $slug_array = explode(' ', $data['title']);
+      $slug = implode('-', $slug_array);
+      $xslug = Blog::where('slug', $slug)->exists();
+      $slug = $xslug ? $slug.'-'.time() : $slug;
+      $data['slug'] = $slug;
+    }
+    // dd($slug);
 
     $data['created_by'] = Auth::id();
 
