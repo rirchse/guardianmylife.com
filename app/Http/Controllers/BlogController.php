@@ -38,6 +38,7 @@ class BlogController extends Controller
     ]);
 
     $data = $request->all();
+    // dd($data);
     if(isset($data['_token']))
     {
       unset($data['_token']);
@@ -51,6 +52,11 @@ class BlogController extends Controller
     if(!isset($data['status']))
     {
       $data['status'] = 'Unpublished';
+    }
+
+    if(isset($data['files']))
+    {
+      unset($data['files']);
     }
     
     $slug_array = explode(' ', $data['title']);
