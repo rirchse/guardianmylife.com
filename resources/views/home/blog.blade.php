@@ -40,7 +40,7 @@
      <div class="elementor-container">
       <ul class="blog-list">
          @foreach($blogs as $key => $blog)
-         <li>
+         <li style="clear: both">
             <a href="{{route('home.blog.show', $blog->slug)}}">
                <img src="{{$blog->image? $blog->image :'/img/blog-image.jpg'}}" alt="">
             <p class="title">{{$blog->title}} </p>
