@@ -465,10 +465,11 @@
     setInterval(function()
     {
       timeLeft++;
-      if(timeLeft == 600)
+      if(timeLeft == 180)
       {
         document.getElementById('logout-form').submit();
         startTimer();
+        localStorage.removeItem("startTime");
       }
       // console.log(timeLeft);
     }, 1000);

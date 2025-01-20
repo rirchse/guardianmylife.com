@@ -12,6 +12,17 @@
     @include('layouts.home-header')
 
     @yield('style')
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z28P9ER99D"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-Z28P9ER99D');
+    </script>
+
   </head>
   <body class="home page-template-default page page-id-139 wp-custom-logo elementor-default elementor-template-full-width elementor-kit-9 elementor-page elementor-page-139">
     <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
