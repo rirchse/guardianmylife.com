@@ -24,7 +24,7 @@
            <div class="elementor-widget-wrap elementor-element-populated">
               <div class="elementor-element elementor-element-056bbe6 elementor-widget__width-initial elementor-hidden-mobile elementor-widget elementor-widget-heading" data-id="056bbe6" data-element_type="widget" data-widget_type="heading.default">
                  <div class="elementor-widget-container" style="color: #fff">
-                    <h1 class="elementor-heading-title elementor-size-default">Our Blog</h1>
+                    <h1 class="elementor-heading-title elementor-size-default">The Guardian My Life Journal</h1>
                  </div>
               </div>
               <div class="elementor-element elementor-element-aeb1780 elementor-widget elementor-widget-text-editor" >
