@@ -48,6 +48,11 @@ $counter = 0;
                 <td>
                   @if(auth()->user()->role == 2)
                   <a href="{{route('blog.edit', $blog->id)}}" class="btn btn-sm btn-warning"><i class="fa fa-edit"></i></a>
+                  <form action="{{route('blog.destroy', $blog->id)}}" style="display: inline" method="post">
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure, you want to delete this blog?')"><i class="fa fa-trash"></i></button>
+                  </form>
                   @endif
                 </td>
               </tr>

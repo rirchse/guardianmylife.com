@@ -166,4 +166,33 @@ class BlogController extends Controller
     Session::flash('success', 'The blog successfully updated.');
     return redirect()->route('blog.edit', $id);
   }
+
+  public function destroy($id)
+  {
+    // find out the blog from database
+    $blog = Blog::find($id);
+
+    //if blog exists
+    if($blog)
+    {
+      // blog image check to the local storage
+      $ximage = public_path($blog->image);
+
+      // check image file exists to the local storage
+      if(File::exists($ximage))
+      {
+        // delete image file from local storage
+        File::delete($ximage);
+      }
+
+      //delete blog
+      $blog->delete();
+
+      Session::flash('success', 'The blog was successfully deleted.');
+      return redirect()->route('blog.index');
+    }
+
+    Session::flash('error', 'The blog is not exist');
+    return back();
+  }
 }

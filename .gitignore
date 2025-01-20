@@ -1,10 +1,12 @@
 /node_modules
 /public/hot
 /public/storage
+/public/uploads
+/storage
 /storage/*.key
 /storage/app/google-calendar
 /storage/keys
-/storage
+/storage/framework/views
 /vendor
 .env
 .env.backup
