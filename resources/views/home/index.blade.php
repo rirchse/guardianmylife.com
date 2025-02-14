@@ -1,5 +1,9 @@
 @extends('layouts.homepage')
 @section('title', 'Home Page')
+@section('style')
+<meta name="keywords" content="Life insurance, family insurance solutions, financial planning, mortgage protection, final expense insurance, annuities, independent insurance agent" />
+<meta name="description" content="Protect your family's future with Guardian My Life. Offering customized life insurance, financial planning, mortgage protection, and annuities. Get a free quote today">
+@endsection
 @section('content')
 <div data-elementor-type="wp-page" data-elementor-id="139" class="elementor elementor-139" data-elementor-post-type="page">
   <section class="elementor-section elementor-top-section elementor-element elementor-element-2b5fe252 elementor-section-content-middle mainpagehero elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2b5fe252" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;none&quot;}">

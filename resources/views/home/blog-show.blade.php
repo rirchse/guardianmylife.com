@@ -1,5 +1,7 @@
 @extends('layouts.homepage')
 @section('style')
+<meta name="keywords" content="Life insurance tips, insurance myths debunked, family protection strategies, wealth building with life insurance">
+
 <link rel='stylesheet' id='elementor-post-361-css' href='/home/css/post-361bfc4.css?ver=1720647533' media='all' />
 <link rel='stylesheet' id='gform_basic-css' href='/home/css/basic.minfae6.css?ver=2.8.14' media='all' />
 <link rel='stylesheet' id='gform_theme-css' href='/home/css/theme.minfae6.css?ver=2.8.14' media='all' />

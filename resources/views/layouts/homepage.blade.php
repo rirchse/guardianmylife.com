@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Life Insurance | Health Insurance | Small Business">
-    <meta name="keywords" content="Insurance, Life Insurance, Health Insurance, Small Business">
+    <meta name="keywords" content="Guardian My Life | Family Life Insurance & Financial Planning">
     <meta name="author" content="Mesidor Azor">
 
     <title>Guardian My Life | Life Insurance | Health Insurance</title>
 
-    @include('layouts.home-header')
-
     @yield('style')
+
+    @include('layouts.home-header')
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z28P9ER99D"></script>
