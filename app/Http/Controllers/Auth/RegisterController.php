@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\SourceCtrl;
 use App\Http\Controllers\EmailController;
+use App\Http\Controllers\CalendlyController;
+// use App\Services\CalendlyService;
 use Illuminate\Http\Request;
 use App\Providers\RouteServiceProvider;
 use App\Models\User;
@@ -17,7 +19,14 @@ use Illuminate\Support\Facades\Validator;
 use Session;
 
 class RegisterController extends Controller
-{
+{    
+    // protected $calendlyService;
+
+    // public function __construct(CalendlyService $calendlyService)
+    // {
+    //     $this->calendlyService = $calendlyService;
+    // }
+
     /*
     |--------------------------------------------------------------------------
     | Register Controller
@@ -43,10 +52,6 @@ class RegisterController extends Controller
      *
      * @return void
      */
-    // public function __construct()
-    // {
-    //     $this->middleware('guest');
-    // }
 
     /**
      * Get a validator for an incoming registration request.
@@ -207,7 +212,7 @@ class RegisterController extends Controller
             'name'      => 'required|string|max:255',
             'email'     => 'required|string|email|max:255|unique:users',
             'phone'     => 'required|string|max:18',
-            'address' => 'nullable|string',
+            'address'   => 'nullable|string',
             'city'      => 'required|string|max:50',
             'state'     => 'required|string|max:50',
             'license'   => 'required|string|max:50',
@@ -250,9 +255,10 @@ class RegisterController extends Controller
     /** store user requsest contact information */
     public function contactStore(Request $request)
     {
+        // dd($request->all());
         $request->validate([
             'name'    => 'required|string|max:255',
-            'email'   => 'required|string|email|max:255|unique:users',
+            'email'   => 'required|string|email|max:255',
             'phone'   => 'required|string|max:18',
             'city'    => 'required|string|max:50',
             'state'   => 'required|string|max:50',
@@ -278,6 +284,11 @@ class RegisterController extends Controller
         return redirect()->back();
         // return redirect()->route('homepage');
 
+    }
+
+    public function createEvent()
+    {
+        return view('home.create-new-event');
     }
 
     /** ajax request */

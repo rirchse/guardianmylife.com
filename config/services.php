@@ -30,4 +30,9 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'calendly' => [
+        'api_token' => env('CALENDLY_API_TOKEN'),
+        'base_url' => 'https://api.calendly.com',
+    ],
+
 ];

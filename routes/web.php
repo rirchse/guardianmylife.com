@@ -18,6 +18,10 @@ use App\Http\Controllers\ReferralController;
 use App\Http\Controllers\GoogleCalendarController;
 use App\Http\Controllers\Google_Calendar;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\CalendlyController;
+
+Route::get('/calendly', [CalendlyController::class, 'index']);
+Route::get('/calendly/get-event', [CalendlyController::class, 'getEvent']);
 
 Route::controller(ScheduleController::class)->group(function()
 {  
@@ -68,6 +72,8 @@ Route::controller(RegisterController::class)->group(function()
 
   Route::post('/agent_signup', 'agentSignup')->name('agent.signup.store');
   Route::post('/contact_store', 'contactStore')->name('contact.store');
+
+  Route::get('/create-new-event', 'createEvent')->name('create.new.event');
 
   Route::get('/check_username/{username}', 'checkUsername');
 });
