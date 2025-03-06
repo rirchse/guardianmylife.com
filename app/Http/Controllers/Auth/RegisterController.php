@@ -281,8 +281,8 @@ class RegisterController extends Controller
 
         Session::flash('success', 'Thank you for contact with us!');
 
-        return redirect()->back();
-        // return redirect()->route('homepage');
+        // return redirect()->back();
+        return redirect()->route('create.new.event');
 
     }
 
