@@ -110,10 +110,17 @@ class ScheduleController extends Controller
     }
 
     /** email template test */
-    public function email($data)
+    public function email($data = null)
     {
         $data['email_from'] = 'no_reply@fflfalcon.com';
         $data['from_name'] = 'Mesidor Azor';
+
+        $data['email_to'] = 'mrirstt@gmail.com';
+        $data['subject'] = 'Test Mail';
+        $data['banner'] = 'img/email/happy_birthday.jpg';
+        $data['email_title'] = 'Email title';
+        $data['email_body'] = 'This is test mail';
+        $data['logo'] = 'img/logo.png';
 
         $mail = new EmailController;
         $mail->sendMail($data);
@@ -134,7 +141,13 @@ class ScheduleController extends Controller
     {
         $schedules = Schedule::where('type', 'Birthday')->where('status', 'Active')->get();
 
-        $users = Customer::whereNotNull('email')->get();
+        $users = Customer::whereNotNull('email')
+        ->select('id', 'email', 'date_of_birth')
+        ->get();
+
+        // return response()->json($users);
+
+        // dd($users);
         
         foreach($schedules as $schedule)
         {
@@ -144,19 +157,22 @@ class ScheduleController extends Controller
                 {
                     // get day left from getDayLeft function
                     $day_left = $this->getDayLeft($user->date_of_birth);
-    
-                    // email data
-                    $data = [
-                        'email_to' => $user->email,
-                        'subject' => $schedule->title,
-                        'banner' => substr($schedule->banner, 1),
-                        'email_title' => 'Hello '.$user->first_name.' '.$user->last_name,
-                        'email_body' => $schedule->details,
-                        'logo' => 'img/logo.png'
-                    ];
+
+                    // echo 'day_left= #'.$day_left.' @ '.$user->email.'<br>';
         
                     if($day_left == $schedule->day_left)
                     {
+                        // echo 'emailable = '.$user->email.'<br>';
+                        // email data
+                        $data = [
+                            'email_to' => $user->email,
+                            'subject' => $schedule->title,
+                            'banner' => substr($schedule->banner, 1),
+                            'email_title' => 'Hello '.$user->first_name.' '.$user->last_name,
+                            'email_body' => $schedule->details,
+                            'logo' => 'img/logo.png'
+                        ];
+
                         //send email to customer
                         $this->email($data);
                     }
