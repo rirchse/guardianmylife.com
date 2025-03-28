@@ -44,7 +44,7 @@ class LoginController extends Controller
     public function loginPost(Request $request)
     {
         $request->validate([
-            'email'    => 'required|string|email|max:32|unique:customers',
+            'email'    => 'required|string|email|max:32',
             'password' => 'required|string|max:32',
         ]);
 
