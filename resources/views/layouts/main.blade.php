@@ -5,6 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{config('app.name')}} | Home Page</title>
   <meta name="csrf-token" content="{{ csrf_token() }}">
+  <link rel="alternate" href="https://guardianmylife.com/" hreflang="en-us" />
+  <link rel="alternate" href="https://guardianmylife.com/fr/" hreflang="fr-fr" />
+  <link rel="alternate" href="https://guardianmylife.com/es/" hreflang="es-es" />
+  <link rel="alternate" href="https://guardianmylife.com/" hreflang="x-default" />
+
+  <url>
+    <loc>https://guardianmylife.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://guardianmylife.com/" />
+    <xhtml:link rel="alternate" hreflang="fr-fr" href="https://guardianmylife.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="es-es" href="https://guardianmylife.com/es/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guardianmylife.com/" />
+  </url>
+  
+
   <link rel="icon" href="/favicon.png">
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">

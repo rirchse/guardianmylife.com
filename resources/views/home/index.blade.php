@@ -2,7 +2,7 @@
 @section('title', 'Home Page')
 @section('style')
 <meta name="keywords" content="Life insurance, family insurance solutions, financial planning, mortgage protection, final expense insurance, annuities, independent insurance agent" />
-<meta name="description" content="Protect your family's future with Guardian My Life. Offering customized life insurance, financial planning, mortgage protection, and annuities. Get a free quote today">
+<meta name="description" content="Secure your family's future with Guardian My Life! Get customized life insurance, financial planning, mortgage protection & annuities. Get a free quote today!">
 @endsection
 @section('content')
 <div data-elementor-type="wp-page" data-elementor-id="139" class="elementor elementor-139" data-elementor-post-type="page">
@@ -39,12 +39,12 @@
 
           <div class="elementor-element elementor-element-f13123a elementor-hidden-desktop elementor-hidden-tablet elementor-headline--style-highlight elementor-invisible elementor-widget elementor-widget-animated-headline" data-id="f13123a" data-element_type="widget" data-settings="{&quot;highlight_animation_duration&quot;:0,&quot;marker&quot;:&quot;underline&quot;,&quot;_animation&quot;:&quot;zoomIn&quot;,&quot;headline_style&quot;:&quot;highlight&quot;}" data-widget_type="animated-headline.default">
             <div class="elementor-widget-container">
-              <h1 class="elementor-headline">
+              <h2 class="elementor-headline">
                 <span class="elementor-headline-plain-text elementor-headline-text-wrapper">Protect what<br></span>
                 <span class="elementor-headline-dynamic-wrapper elementor-headline-text-wrapper">
                 </span>
                 <span class="elementor-headline-plain-text elementor-headline-text-wrapper">matters most.</span>
-              </h1>
+              </h2>
             </div>
           </div>
           <div class="elementor-element elementor-element-320ccfb8 elementor-invisible elementor-widget elementor-widget-heading" data-id="320ccfb8" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
