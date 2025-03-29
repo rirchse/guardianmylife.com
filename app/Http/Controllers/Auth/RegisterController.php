@@ -138,7 +138,7 @@ class RegisterController extends Controller
             $data = [
                 'email_to' => $data['email'],
                 'subject' => 'Your Quotation | GuardianMyLife.com ',
-                'banner' => 'img/logo.jpg',
+                'banner' => 'img/quote.jpg',
                 'email_title' => 'Hello '.$data['first_name'].' '.$data['last_name'],
                 'email_body' => 'Your Quotation Below:<br> Name: '.$data['first_name'].' '.$data['last_name'].'<br> Email: '.$data['email'].'<br> Contact: '.$data['mobile'].'<br> Your Insurance Amount Calculation Total: $'.$data['insurance_amount'],
                 'logo' => 'img/logo.png'
