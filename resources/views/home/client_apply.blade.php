@@ -211,7 +211,7 @@
    .modal, .modal label{color:#000}
    .form-control{border:1px solid #999!important}
 </style>
-<div class="modal fade" id="exampleModal" tabindex="-2" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModal" tabindex="-2" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
    <div class="modal-dialog" role="document" style="width:100%; max-width: 900px">
       <div class="modal-content">
          <div class="modal-header">Calculate the right amount you need</div>
@@ -236,7 +236,7 @@
          <div class="modal-footer">
             <label class="pull-left"> Total = <input id="totalCalc" value="$00.00" disabled /></label>
             <button class="btn btn-warning" onclick="resetForm()"><i class="fa fa-refresh"></i> Reset</button>
-            <button class="btn btn-info" data-dismiss="modal" onclick="setCalcValue()">Done</button>
+            <button class="btn btn-info" data-dismiss="modal" onclick="setCalcValue(); hideThis(this)">Done</button>
          </div>
       </div>
    </div>
@@ -260,20 +260,32 @@
 
 <script>
 
+   function hideThis(e)
+   {
+      e.parentNode.parentNode.parentNode.parentNode.style.display = 'none';
+   }
+
    /* show confirmation */
    function modalConfirm()
    {
+      // console.log('modal working');
       // $("#modalConfirm").fadeIn();
 
       var c = document.getElementById('modalConfirm');
       c.classList.add('in');
       c.style.display = 'block';
+      
    }
 
    function modalDissmis()
    {
       var c = document.getElementById('modalConfirm');
       c.style.display = 'none';
+
+      var modal = document.getElementById('exampleModal');
+      modal.setAttribute('aria-hidden', false);
+      modal.classList.add('in');
+      modal.style.display = 'block';
    }
 
    function usdFormat(val)
