@@ -35,7 +35,7 @@
 		</div>
 		@else
 		<div style="padding-bottom: 30px; background: #fff; padding: 25px; display: block;">
-			<img src="{{ $message->embed($logo) }}" alt="logo" style="float: left; display: flex; width: 180px; padding: 20px;">
+			<img src="{{ $message->embed($logo) }}" alt="logo" style="float: left; display: flex; width: 112px; padding: 20px;">
 			<p style="font-size: 21px; width:100%">
 			<a href="{{config('app.url')}}" target="_blank">{{config('app.name')}}</a><br>
 			Phone: (347) 336-1929<br>

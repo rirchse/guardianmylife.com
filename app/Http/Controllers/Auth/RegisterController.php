@@ -107,7 +107,7 @@ class RegisterController extends Controller
         $passValidate = $request->validate([
             'first_name' => 'required|string|max:32',
             'last_name'  => 'required|string|max:32',
-            'email'      => 'required|string|email|max:32|unique:customers',
+            'email'      => 'required|string|email|max:32',
             'mobile'     => 'required|string|max:20',
             'street_address' => 'nullable|string',
             'date_of_birth' => 'required|string|max:18',
@@ -128,6 +128,28 @@ class RegisterController extends Controller
         if(isset($data['insurance_amount']))
         {
             $data['insurance_amount'] = str_replace(['$',','], '', $data['insurance_amount']);
+        }
+
+        /** ------------ if the client already registered --------- */
+        $client_exist = Customer::where('email', $data['email'])->first();
+        if($client_exist)
+        {
+            /** send email */
+            $data = [
+                'email_to' => $data['email'],
+                'subject' => 'Your Quotation | GuardianMyLife.com ',
+                'banner' => 'img/logo.jpg',
+                'email_title' => 'Hello '.$data['first_name'].' '.$data['last_name'],
+                'email_body' => 'Your Quotation Below:<br> Name: '.$data['first_name'].' '.$data['last_name'].'<br> Email: '.$data['email'].'<br> Contact: '.$data['mobile'].'<br> Your Insurance Amount Calculation Total: $'.$data['insurance_amount'],
+                'logo' => 'img/logo.png'
+            ];
+
+            $mail = new EmailController;
+            $mail->sendMail($data);
+
+            Session::flash('success', 'Your quotation has been sent to '.$email.' email account. Please check your email for more information.');
+
+            return redirect('/');
         }
 
         $referrer = Session::get('_referrer');

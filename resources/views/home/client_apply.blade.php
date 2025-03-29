@@ -87,7 +87,7 @@
             </div>
          </div>
          <div id="field_2_16" class="gfield gfield--type-textarea gfield--input-type-textarea" >
-            <label class='gfield_label gform-field-label' for='address'>Street Address:<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label>
+            <label class='gfield_label gform-field-label' for='address'>Street Address:<span class="gfield_required"></span></label>
             <div class='ginput_container ginput_container_textarea'>
                <textarea name='street_address' id='address' rows='3' placeholder="Street Address"></textarea>
             </div>
