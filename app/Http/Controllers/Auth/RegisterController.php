@@ -140,7 +140,23 @@ class RegisterController extends Controller
                 'subject' => 'Your Quotation | GuardianMyLife.com ',
                 'banner' => 'img/quote.jpg',
                 'email_title' => 'Hello '.$data['first_name'].' '.$data['last_name'],
-                'email_body' => 'Your Quotation Below:<br> Name: '.$data['first_name'].' '.$data['last_name'].'<br> Email: '.$data['email'].'<br> Contact: '.$data['mobile'].'<br> Your Insurance Amount Calculation Total: $'.$data['insurance_amount'],
+                'email_body' => '<p>Thank You for Your Inquiry!</p>'.
+                '<p>Hello '.$data['first_name'].'</p>'.
+                '<p>Thank you for reaching out to Guardian My Life. Below is a summary of the information you provided:</p>'.
+                '<ul>'.
+                '<li>Name: '.$data['first_name'].' '.$data['last_name'].'</li>'.
+                '<li>Email: '.$data['email'].'</li>'.
+                '<li>Contact: '.$data['mobile'].'</li>'.
+                '<li>Your Insurance Amount Calculation Total: $'.$data['insurance_amount'].'</li>'.
+                '</ul>'.
+                '<p>One of our experienced insurance professionals will review your inquiry and reach out to you shortly to discuss your coverage options.</p>'.
+                '<p>What’s Next?</p>'.
+                '<ul>'.
+                '<li>Review Your Inquiry – Our team is reviewing the details you submitted.</li>'.
+                '<li>Expect a Call or Email – A Guardian My Life professional will be in touch soon.</li>'.
+                '<li>Schedule a Consultation – Want to speak with us at your convenience? Click here to book an appointment.</li>'.
+                '<li>We look forward to helping you protect what matters most!</li>'.
+                '</ul>',
                 'logo' => 'img/logo.png'
             ];
 
