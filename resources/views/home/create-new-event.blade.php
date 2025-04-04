@@ -10,7 +10,7 @@
 @endsection
 @section('content')
 <div data-elementor-type="wp-page" data-elementor-id="361" class="elementor elementor-361" data-elementor-post-type="page">
-  <section class="elementor-section elementor-top-section elementor-element elementor-element-422c8197 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="422c8197" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+  <section class="elementor-section elementor-top-section elementor-element elementor-element-422c8197 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="422c8197" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}"  style="background-image:url('/home/images/team.jpg')">
      <div class="elementor-background-overlay"></div>
      <div class="elementor-container elementor-column-gap-no">
         <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-27944c13" data-id="27944c13" data-element_type="column">

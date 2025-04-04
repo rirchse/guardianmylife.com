@@ -139,9 +139,8 @@ class RegisterController extends Controller
                 'email_to' => $data['email'],
                 'subject' => 'Your Quotation | GuardianMyLife.com ',
                 'banner' => 'img/quote.jpg',
-                'email_title' => 'Hello '.$data['first_name'].' '.$data['last_name'],
-                'email_body' => '<p>Thank You for Your Inquiry!</p>'.
-                '<p>Hello '.$data['first_name'].'</p>'.
+                'email_title' => '<p style="text-align:center; font-weight:bold">Thank You for Your Inquiry!</p>',
+                'email_body' => '<p>Hello '.$data['first_name'].' '.$data['last_name'].'</p>'.
                 '<p>Thank you for reaching out to Guardian My Life. Below is a summary of the information you provided:</p>'.
                 '<ul>'.
                 '<li>Name: '.$data['first_name'].' '.$data['last_name'].'</li>'.
@@ -165,7 +164,7 @@ class RegisterController extends Controller
 
             Session::flash('success', 'Your quotation has been sent to '.$email.' email account. Please check your email for more information.');
 
-            return redirect('/');
+            return redirect()->route('create.new.event');
         }
 
         $referrer = Session::get('_referrer');
@@ -276,17 +275,44 @@ class RegisterController extends Controller
         try{
             User::insert($data);
         }
-        catch(\E $e)
+        catch(\Exception $e)
         {
-            return $e;
+            return $e->getMessage();
         }
+
+        /** send email */
+        $data = [
+            'email_to' => $data['email'],
+            'subject' => 'Thank You for Your Interest in Joining | GuardianMyLife.com ',
+            'banner' => 'img/quote.jpg',
+            'email_title' => '<p style="text-align:center; font-weight:bold">Thank You for Your Interest in Joining Guardian My Life!</p>',
+            'email_body' => '<p>Hello '.$data['first_name'].' '.$data['last_name'].'</p>'.
+            '<p>We appreciate your interest in becoming part of Guardian My Life! Our mission is to help families secure their financial future while providing rewarding career opportunities for motivated professionals like you.</p>'.
+            '<p>Next Steps:</p>'.
+            '<ul>'.
+                '<li>✔ Review Your Submission – Our team is currently reviewing your information.</li>'.
+                '<li>✔ Expect a Call or Email – A Guardian My Life representative will reach out to discuss the opportunity in more detail.</li>'.
+                '<li>✔ Schedule an Introductory Call – Want to take the next step now? Click here to book an appointment.</li>'.
+            '</ul>'.
+            '<p>At Guardian My Life, we offer:</p>'.
+            '<ul>'.
+                '<li>✅ Competitive commissions and bonuses</li>'.
+                '<li>✅ Comprehensive training and mentorship</li>'.
+                '<li>✅ A supportive team environment to help you grow</li>'.
+            '</ul>'.
+            '<p>We’re excited to connect with you soon and explore how we can work together!</p>',
+            'logo' => 'img/logo.png'
+        ];
+
+        $mail = new EmailController;
+        $mail->sendMail($data);
 
         if(Session::get('_agent'))
         {
             Session::forget('_agent');
         }
 
-        Session::flash('success', 'Thank you for your interest to join our team.  A member from our recruitment team will contact you soon.');
+        Session::flash('success', 'Thank you for your interest to join our team. A member from our recruitment team will contact you soon.');
         return redirect()->route('homepage');
     }
 
