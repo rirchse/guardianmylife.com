@@ -40,7 +40,6 @@
                        .elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}
                     </style>
                     <p>It takes less than 2 minutes to fill out the form below.<br />A GML rep will get back to you within 24 hours.</p>
-                    <p>All fields are required.</p>
                  </div>
               </div>
            </div>

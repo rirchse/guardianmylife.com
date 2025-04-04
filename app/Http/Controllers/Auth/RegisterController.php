@@ -286,7 +286,7 @@ class RegisterController extends Controller
             'subject' => 'Thank You for Your Interest in Joining | GuardianMyLife.com ',
             'banner' => 'img/quote.jpg',
             'email_title' => '<p style="text-align:center; font-weight:bold">Thank You for Your Interest in Joining Guardian My Life!</p>',
-            'email_body' => '<p>Hello '.$data['first_name'].' '.$data['last_name'].'</p>'.
+            'email_body' => '<p>Hello '.$data['name'].'</p>'.
             '<p>We appreciate your interest in becoming part of Guardian My Life! Our mission is to help families secure their financial future while providing rewarding career opportunities for motivated professionals like you.</p>'.
             '<p>Next Steps:</p>'.
             '<ul>'.
