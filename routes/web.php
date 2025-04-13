@@ -20,6 +20,10 @@ use App\Http\Controllers\Google_Calendar;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\CalendlyController;
 
+Route::post('/auth/calendly', function(Reques $request){
+  dd($request->all());
+});
+
 Route::get('/calendly', [CalendlyController::class, 'index']);
 Route::get('/calendly/get-event', [CalendlyController::class, 'getEvent']);
 
