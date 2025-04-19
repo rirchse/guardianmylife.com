@@ -40,6 +40,7 @@
                        .elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}
                     </style>
                     <p>It takes less than 2 minutes to fill out the form below.<br />A GML rep will get back to you within 24 hours.</p>
+                    <a href="{{route('create.new.event')}}" style="border:1px solid #ddd; padding:10px 15px; background:#00f">You can Create New Event to Connect our team directly.</a>
                  </div>
               </div>
            </div>

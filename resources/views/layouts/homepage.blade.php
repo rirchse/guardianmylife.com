@@ -166,14 +166,11 @@
                             <ul id="menu-1-ecb275e" class="elementor-nav-menu">
                               <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-139 current_page_item menu-item-257"><a href="/" aria-current="page" class="elementor-item elementor-item-active">Home</a></li>
                               <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-249"><a href="/#about" aria-current="page" class="elementor-item elementor-item-anchor">About Us</a></li>
-                              <!-- <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-252"><a href="#" class="elementor-item">News</a></li> -->
-                              <!-- <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-253"><a target="_blank" rel="noopener" href="https://shop.guardianmylife.com/" class="elementor-item">Shop</a></li> -->
-                              <!-- <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-835"><a href="#" class="elementor-item">Offices</a></li> -->
                               <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-836"><a href="{{route('home.team')}}" class="elementor-item">Team</a></li>
                               <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-254"><a href="{{route('home.contact')}}" class="elementor-item">Contact Us</a></li>
                               <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1025"><a href="{{route('home.agent.apply')}}" class="elementor-item">Agents</a></li>
                               <li class=""><a href="{{route('home.blog')}}" class="elementor-item">Blog</a></li>
-                              {{-- <li class=""><a target="_blank" href="https://metricool.com" class="elementor-item">Blog</a></li> --}}
+                              <li class=""><a href="{{route('create.new.event')}}" class="elementor-item">Event</a></li>
                             </ul>
                           </nav>
                           <div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
@@ -189,12 +186,11 @@
                             <ul id="menu-2-ecb275e" class="elementor-nav-menu">
                               <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-139 current_page_item menu-item-257"><a href="#" aria-current="page" class="elementor-item elementor-item-active" tabindex="-1">Home</a></li>
                               <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-249"><a href="#" aria-current="page" class="elementor-item elementor-item-anchor" tabindex="-1">About</a></li>
-                              <!-- <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-252"><a href="news/index.html" class="elementor-item" tabindex="-1">News</a></li> -->
-                              <!-- <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-253"><a target="_blank" rel="noopener" href="https://shop.guardianmylife.com/" class="elementor-item" tabindex="-1">Shop</a></li> -->
-                              <!-- <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-835"><a href="offices/index.html" class="elementor-item" tabindex="-1">Offices</a></li> -->
                               <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-836"><a href="#" class="elementor-item" tabindex="-1">Team</a></li>
-                              <!-- <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-254"><a href="contact/index.html" class="elementor-item" tabindex="-1">Contact</a></li> -->
+                              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-254"><a href="{{route('home.contact')}}" class="elementor-item">Contact Us</a></li>
                               <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1025"><a href="#" class="elementor-item" tabindex="-1">Agents</a></li>
+                              <li class=""><a href="{{route('home.blog')}}" class="elementor-item">Blog</a></li>
+                              <li class=""><a href="{{route('create.new.event')}}" class="elementor-item">Event</a></li>
                             </ul>
                           </nav>
                         </div>
@@ -289,19 +285,19 @@
                             <ul id="menu-2-2e3d4fd" class="elementor-nav-menu">
                               <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-139 current_page_item menu-item-997"><a href="#" aria-current="page" class="elementor-item elementor-item-active" tabindex="-1">Home</a></li>
                               <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-1002"><a href="/#about" aria-current="page" class="elementor-item elementor-item-anchor" tabindex="-1">About Us</a></li>
-                              <!-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-999"><a href="news/index.html" class="elementor-item" tabindex="-1">News</a></li> -->
-                              <!-- <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1004"><a target="_blank" rel="noopener" href="https://shop.guardianmylife.com/" class="elementor-item" tabindex="-1">Shop</a></li> -->
-                              <!-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1000"><a href="offices/index.html" class="elementor-item" tabindex="-1">Offices</a></li> -->
                               <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1001"><a href="#" class="elementor-item" tabindex="-1">Team</a></li>
+                              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-254"><a href="{{route('home.contact')}}" class="elementor-item">Contact Us</a></li>
                               <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1063"><a href="#" class="elementor-item" tabindex="-1">Agents</a></li>
+                              <li class=""><a href="{{route('home.blog')}}" class="elementor-item">Blog</a></li>
+                              <li class=""><a href="{{route('create.new.event')}}" class="elementor-item">Event</a></li>
                               <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1049"><a href="{{route('login')}}" class="elementor-item" tabindex="-1"><img src="/home/images/user-profile-filled-svgrepo-com.svg" class="_mi _before _svg" aria-hidden="true" alt="" width="25" height="25"/><span>Agent Login</span></a></li>
                               <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1062"><a href="{{route('home.client.apply')}}" class="elementor-item" tabindex="-1"><img loading="lazy" src="/home/images/icon-arrow-right-apply-to-work-with-ffl.svg" class="_mi _before _svg" aria-hidden="true" alt="" width="25" height="25"/><span>Apply to Work with GML</span></a></li>
-                              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-998"><a href="#" class="elementor-item" tabindex="-1">Contact Us</a></li>
                               <li class="socialicons menu-item menu-item-type-custom menu-item-object-custom menu-item-1006">
                                 <a class="elementor-item" tabindex="-1">
                                   <ul class="elementor-icon-list-items elementor-inline-items naviconlist">
                                     <li>
-                                <a href="#" target="_blank" rel="noopener">  												<span class="elementor-icon-list-icon"> 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30px" height="30px"><path d="M26.37,26l-8.795-12.822l0.015,0.012L25.52,4h-2.65l-6.46,7.48L11.28,4H4.33l8.211,11.971L12.54,15.97L3.88,26h2.65 l7.182-8.322L19.42,26H26.37z M10.23,6l12.34,18h-2.1L8.12,6H10.23z" style="--wp-dark-mode-large-font-size: 20.4px;"></path></svg>						</span> 										 											</a> 									</li> 								<li> 											<a href="https://www.instagram.com/guardianmylife/" target="_blank" rel="noopener">  												<span class="elementor-icon-list-icon"> 							<svg aria-hidden="true" class="e-font-icon-svg e-fab-instagram" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" style="--wp-dark-mode-large-font-size: 15.6px;"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" style="--wp-dark-mode-large-font-size: 15.6px;"></path></svg></span></a></li><li><a href="#" target="_blank" rel="noopener">  												<span class="elementor-icon-list-icon" style="--wp-dark-mode-large-font-size: 15.6px;"><svg aria-hidden="true" class="e-font-icon-svg e-fab-facebook-f" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg" style="--wp-dark-mode-large-font-size: 15.6px;"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" style="--wp-dark-mode-large-font-size: 15.6px;"></path></svg></span></a></li><li><a href="#" target="_blank" rel="noopener">  												<span class="elementor-icon-list-icon" style="--wp-dark-mode-large-font-size: 15.6px;"> 							<svg aria-hidden="true" class="e-font-icon-svg e-fab-youtube" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg" style="--wp-dark-mode-large-font-size: 15.6px;"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" style="--wp-dark-mode-large-font-size: 15.6px;"></path></svg></span></a></li><li><a href="#" target="_blank" rel="noopener"><span class="elementor-icon-list-icon" style="--wp-dark-mode-large-font-size: 15.6px;"><svg aria-hidden="true" class="e-font-icon-svg e-fab-linkedin-in" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" style="--wp-dark-mode-large-font-size: 15.6px;"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" style="--wp-dark-mode-large-font-size: 15.6px;"></path></svg>						</span> 										<span class="elementor-icon-list-text" style="--wp-dark-mode-large-font-size: 15.6px;"></span> 											</a> 									</li> 								<li> 											<a href="#" target="_blank" rel="noopener">  												<span class="elementor-icon-list-icon" style="--wp-dark-mode-large-font-size: 15.6px;"> 							<svg aria-hidden="true" class="e-font-icon-svg e-fab-tiktok" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" style="--wp-dark-mode-large-font-size: 15.6px;"><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" style="--wp-dark-mode-large-font-size: 15.6px;"></path></svg></span></a>
+                                      <a href="#" target="_blank" rel="noopener"><span class="elementor-icon-list-icon"> 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30px" height="30px"><path d="M26.37,26l-8.795-12.822l0.015,0.012L25.52,4h-2.65l-6.46,7.48L11.28,4H4.33l8.211,11.971L12.54,15.97L3.88,26h2.65 l7.182-8.322L19.42,26H26.37z M10.23,6l12.34,18h-2.1L8.12,6H10.23z" style="--wp-dark-mode-large-font-size: 20.4px;"></path></svg><span></a></li> 								<li>
+                                        <a href="https://www.instagram.com/guardianmylife/" target="_blank" rel="noopener"><span class="elementor-icon-list-icon"> 							<svg aria-hidden="true" class="e-font-icon-svg e-fab-instagram" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" style="--wp-dark-mode-large-font-size: 15.6px;"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" style="--wp-dark-mode-large-font-size: 15.6px;"></path></svg></span></a></li><li><a href="#" target="_blank" rel="noopener"><span class="elementor-icon-list-icon" style="--wp-dark-mode-large-font-size: 15.6px;"><svg aria-hidden="true" class="e-font-icon-svg e-fab-facebook-f" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg" style="--wp-dark-mode-large-font-size: 15.6px;"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" style="--wp-dark-mode-large-font-size: 15.6px;"></path></svg></span></a></li><li><a href="#" target="_blank" rel="noopener">  												<span class="elementor-icon-list-icon" style="--wp-dark-mode-large-font-size: 15.6px;"> 							<svg aria-hidden="true" class="e-font-icon-svg e-fab-youtube" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg" style="--wp-dark-mode-large-font-size: 15.6px;"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" style="--wp-dark-mode-large-font-size: 15.6px;"></path></svg></span></a></li><li><a href="#" target="_blank" rel="noopener"><span class="elementor-icon-list-icon" style="--wp-dark-mode-large-font-size: 15.6px;"><svg aria-hidden="true" class="e-font-icon-svg e-fab-linkedin-in" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" style="--wp-dark-mode-large-font-size: 15.6px;"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" style="--wp-dark-mode-large-font-size: 15.6px;"></path></svg>						</span> 										<span class="elementor-icon-list-text" style="--wp-dark-mode-large-font-size: 15.6px;"></span> 											</a> 									</li> 								<li> 											<a href="#" target="_blank" rel="noopener">  												<span class="elementor-icon-list-icon" style="--wp-dark-mode-large-font-size: 15.6px;"> 							<svg aria-hidden="true" class="e-font-icon-svg e-fab-tiktok" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" style="--wp-dark-mode-large-font-size: 15.6px;"><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" style="--wp-dark-mode-large-font-size: 15.6px;"></path></svg></span></a>
                                 </li>
                               </ul>
                             </a>
@@ -493,46 +489,6 @@
                         <span class="elementor-icon-list-text">About Us</span>
                       </a>
                     </li>
-                    <!-- <li class="elementor-icon-list-item">
-                      <a href="news/index.html">
-                        <span class="elementor-icon-list-icon">
-                          <svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-right" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path>
-                          </svg>
-                        </span>
-                        <span class="elementor-icon-list-text">News</span>
-                      </a>
-                    </li>
-                    <li class="elementor-icon-list-item">
-                      <a href="index.html#products">
-                        <span class="elementor-icon-list-icon">
-                          <svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-right" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path>
-                          </svg>
-                        </span>
-                        <span class="elementor-icon-list-text">Products</span>
-                      </a>
-                    </li>
-                    <li class="elementor-icon-list-item">
-                      <a href="index.html#carriers">
-                        <span class="elementor-icon-list-icon">
-                          <svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-right" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path>
-                          </svg>
-                        </span>
-                        <span class="elementor-icon-list-text">Carriers</span>
-                      </a>
-                    </li>
-                    <li class="elementor-icon-list-item">
-                      <a href="offices/index.html">
-                        <span class="elementor-icon-list-icon">
-                          <svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-right" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path>
-                          </svg>
-                        </span>
-                        <span class="elementor-icon-list-text">Offices</span>
-                      </a>
-                    </li> -->
                     <li class="elementor-icon-list-item">
                       <a href="#">
                         <span class="elementor-icon-list-icon">
@@ -601,48 +557,6 @@
                   </ul>
                 </div>
               </div>
-              {{-- <div class="elementor-element elementor-element-f6ce3df elementor-widget elementor-widget-heading" data-id="f6ce3df" data-element_type="widget" data-widget_type="heading.default">
-                <div class="elementor-widget-container">
-                  <div class="elementor-heading-title elementor-size-default">GML APPARREL</div>
-                </div>
-              </div> --}}
-              {{-- <div class="elementor-element elementor-element-4d648ed6 elementor-align-left elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="4d648ed6" data-element_type="widget" data-widget_type="icon-list.default">
-                <div class="elementor-widget-container">
-                  <ul class="elementor-icon-list-items">
-                    <li class="elementor-icon-list-item">
-                      <a href="#" target="_blank">
-                        <span class="elementor-icon-list-icon">
-                          <svg aria-hidden="true" class="e-font-icon-svg e-fas-tshirt" viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M631.2 96.5L436.5 0C416.4 27.8 371.9 47.2 320 47.2S223.6 27.8 203.5 0L8.8 96.5c-7.9 4-11.1 13.6-7.2 21.5l57.2 114.5c4 7.9 13.6 11.1 21.5 7.2l56.6-27.7c10.6-5.2 23 2.5 23 14.4V480c0 17.7 14.3 32 32 32h256c17.7 0 32-14.3 32-32V226.3c0-11.8 12.4-19.6 23-14.4l56.6 27.7c7.9 4 17.5.8 21.5-7.2L638.3 118c4-7.9.8-17.6-7.1-21.5z"></path>
-                          </svg>
-                        </span>
-                        <span class="elementor-icon-list-text">Visit Shop</span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div> --}}
-              {{-- <div class="elementor-element elementor-element-8c1e185 elementor-widget elementor-widget-heading" data-id="8c1e185" data-element_type="widget" data-widget_type="heading.default">
-                <div class="elementor-widget-container">
-                  <div class="elementor-heading-title elementor-size-default">GML Cares</div>
-                </div>
-              </div> --}}
-              {{-- <div class="elementor-element elementor-element-bedcc42 elementor-align-left elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="bedcc42" data-element_type="widget" data-widget_type="icon-list.default">
-                <div class="elementor-widget-container">
-                  <ul class="elementor-icon-list-items">
-                    <li class="elementor-icon-list-item">
-                      <a href="index.html#philanthropy">
-                        <span class="elementor-icon-list-icon">
-                          <svg aria-hidden="true" class="e-font-icon-svg e-fas-heart" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path>
-                          </svg>
-                        </span>
-                        <span class="elementor-icon-list-text">Philanthrophy</span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div> --}}
             </div>
           </div>
           <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-4510c1d8" data-id="4510c1d8" data-element_type="column">

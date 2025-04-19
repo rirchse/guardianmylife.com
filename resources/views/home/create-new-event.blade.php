@@ -27,7 +27,8 @@
               </div>
               <div class="elementor-element elementor-element-aeb1780 elementor-widget elementor-widget-text-editor" data-id="aeb1780" data-element_type="widget" data-widget_type="text-editor.default">
                  <div class="elementor-widget-container">
-                    <p style="text-align: center;color:#fff">Do you want to meet our team directly? Please choose a Event from below, otherwise back to the <a href="{{route('homepage')}}">Home Page</a> Thank you</p>
+                    <p style="text-align: center;color:#fff">Do you want to meet our team directly?
+                     <br>Please choose a Event from below, otherwise back to the <a href="{{route('homepage')}}">Home Page</a> Thank you</p>
                  </div>
               </div>
            </div>
