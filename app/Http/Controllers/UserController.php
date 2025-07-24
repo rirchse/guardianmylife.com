@@ -280,7 +280,7 @@ class UserController extends Controller
             $appointment_ratio = 0;
             if ($yes > 0 && $appointment_sat > 0)
             {
-            $appointment_ratio = $appointment_sat / $yes * 100;
+            $appointment_ratio = $appoinements / $yes * 100;
             $appointment_ratio = round($appointment_ratio);
             }
             
