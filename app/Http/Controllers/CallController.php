@@ -111,8 +111,8 @@ class CallController extends Controller
             ];
 
             /** add this appointment to the google calendar */
-            $event = New GoogleCalendarController;
-            $last_event = $event->create($data);
+            // $event = New GoogleCalendarController;
+            // $last_event = $event->create($data);
         //    dd($last_event);
 
         }
