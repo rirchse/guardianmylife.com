@@ -27,13 +27,13 @@ $source = New SourceCtrl;
         </tr>
         </thead>
        <tbody>
+        {{-- @dd($remainders) --}}
         @foreach($remainders as $remainder)
-        {{-- @dd($remainder) --}}
         <tr>
             <td>{{$remainder->customer_id}}</td>
             <td>{{$remainder->User->name}}</td>
             <td>{{$remainder->Call->Customer->first_name}} {{$remainder->Call->Customer->last_name}}</td>
-            <td>{{ $source->dformat($remainder->remainder_time) }}</td>
+            <td>{{ $source->dtformat($remainder->reminder_time) }}</td>
             <td>{{$remainder->note}}</td>            
             <th>
               <a href="{{route('customer.show', $remainder->customer_id)}}"><i title="Make a call" class="fa fa-phone" aria-hidden="true"></i></a>
