@@ -257,7 +257,7 @@ text-align:left;
                 <div class="stati silver left" style="border: 1px solid gray;margin-top: 0px;">
                     <i class="icon-pin icons"></i>
                     <div>
-                        <b>{{isset($appointment_sat)? $appointment_sat:''}}</b>
+                        <b>{{isset($appoinements)? $appoinements:''}}</b>
                         <span>Appointments</span>
                     </div>
                 </div>
