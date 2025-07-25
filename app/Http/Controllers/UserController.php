@@ -281,14 +281,14 @@ class UserController extends Controller
             if ($yes > 0 && $appointment_sat > 0)
             {
             $appointment_ratio = $appoinements / $yes * 100;
-            $appointment_ratio = round($appointment_ratio);
+            $appointment_ratio = number_format($appointment_ratio, 2);
             }
             
             $sales_ratio = 0;
             if ($appoinements > 0)
             {
                 $sales_ratio = $sold / $appoinements * 100;
-                $sales_ratio = round($sales_ratio);
+                $sales_ratio = number_format($sales_ratio, 2);
             }
             
             $appointment_sat_ratio = 0;
