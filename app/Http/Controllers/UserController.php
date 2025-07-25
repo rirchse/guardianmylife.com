@@ -278,7 +278,7 @@ class UserController extends Controller
             } 
 
             $appointment_ratio = 0;
-            if ($yes > 0 && $appointment_sat > 0)
+            if ($yes > 0 && $appointment_set > 0)
             {
             $appointment_ratio = $appoinements / $yes * 100;
             $appointment_ratio = number_format($appointment_ratio, 2);
@@ -295,7 +295,7 @@ class UserController extends Controller
             if ($appointment_sat > 0 && $appoinements > 0)
             {
                 $appointment_sat_ratio = $appointment_sat * 100 / $appoinements;
-                $appointment_sat_ratio = round($appointment_sat_ratio);
+                $appointment_sat_ratio = number_format($appointment_sat_ratio, 2);
             }
             
             $leads = Leads::whereRaw('DATE(created_at) >= ?', [$from])
@@ -310,7 +310,7 @@ class UserController extends Controller
                         
             if($cost > 0)
             {
-                $cost_per_lead = $cost/ $leads;
+              $cost_per_lead = $cost/ $leads;
             }
             else
             {
