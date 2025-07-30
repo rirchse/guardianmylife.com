@@ -61,7 +61,7 @@ class CallController extends Controller
         $customer->Notes = $request->aboutcall;         
         $customer->save(); 
 
-        if($request->aboutcall == 'Review' || $request->aboutcall == 'Appointment' || $request->aboutcall == 'Reminder' || $request->aboutcall == 'Not Interested')
+        if($request->aboutcall == 'Callback' || $request->aboutcall == 'Review' || $request->aboutcall == 'Appointment' || $request->aboutcall == 'Reminder' || $request->aboutcall == 'Not Interested')
         {
             $reminder = Reminder::where('customer_id', $request->customer_id)->first();
 
@@ -84,6 +84,18 @@ class CallController extends Controller
             $call->notes = $request->remarks;
         }
 
+        if($request->aboutcall == 'Callback')
+        {
+          $request->validate([
+            'callback_date_time' => 'nullable',
+            'callback_remarks' => 'nullable'
+          ]);
+
+          $call->Appointment = 'Callback';
+          $call->appointment_time = $request->callback_date_time;
+          $call->appointment_notes = $request->callback_remarks;
+        }
+
         if($request->aboutcall == 'Appointment')
         {
             $request->validate([
@@ -92,28 +104,23 @@ class CallController extends Controller
                 'appoint_note' => 'nullable'
             ]);
 
-            $call->Appointment = 'Yes';       
+            $call->Appointment = 'Yes';
             $call->appointment_time = $request->appoint_date_time;
             $call->appointment_location = $request->appoint_location;
             $call->appointment_notes = $request->appoint_note;
 
-            $agent = User::find($customer->lead_owner);
+            // $agent = User::find($customer->lead_owner);
 
             /** required information for google calendar */
-            $data = [
-                // allways show the agent name
-                'title' => 'Appointment with Agent',
-                'email' => $customer->email,
-                'date_time' => $request->appoint_date_time,
-                // virtually location google meet 
-                'location'  => $request->appoint_location,
-                'details'   => $request->appoint_note,
-            ];
-
-            /** add this appointment to the google calendar */
-            // $event = New GoogleCalendarController;
-            // $last_event = $event->create($data);
-        //    dd($last_event);
+            // $data = [
+            //     // allways show the agent name
+            //     'title' => 'Appointment with Agent',
+            //     'email' => $customer->email,
+            //     'date_time' => $request->appoint_date_time,
+            //     // virtually location google meet 
+            //     'location'  => $request->appoint_location,
+            //     'details'   => $request->appoint_note,
+            // ];
 
         }
         $call->save();

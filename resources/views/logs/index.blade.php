@@ -9,10 +9,10 @@
         <thead>
         <tr>
           <th>Sr#</th>
-         <th>Email</th> 
-         <th>Name</th>  
-         <th>Time</th> 
-         <th>Action</th>   
+          <th>Email</th> 
+          <th>Name</th>  
+          <th>Time</th> 
+          <th>Action</th>   
           <th> Date</th>
         </tr>
         </thead>

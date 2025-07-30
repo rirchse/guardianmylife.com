@@ -17,7 +17,7 @@ $source = New SourceCtrl;
             <th>SL#</th>
             <th>Customer Name</th>
             <th>Call Duration</th>
-            <th>Appointment</th> 
+            <th>Status / Appointment</th> 
             <th>Call Time</th>               
             <th>Action</th>
           </tr>

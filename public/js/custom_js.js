@@ -3,6 +3,12 @@
   var aboutCallRadios = document.getElementsByName("aboutcall");
   var time_display = document.getElementById("timerDisplay1");
   var customer_id = document.getElementById("customer_id").value;
+
+  const callback = document.getElementById("callback");
+  const remarks = document.getElementById("remarks");
+  const remainder = document.getElementById("remainder");
+  const appointment = document.getElementById("appointment");
+
   if(aboutCallRadios.length > 0)
   {
     // Add event listener to each radio button
@@ -19,23 +25,33 @@
           storeTimeInDatabase1(elapsedTime1);     
           document.getElementById("callForm").submit();
         }
+        else if(selectedValue === "Callback")
+        {
+          callback.style.display="block";
+          remarks.style.display = "none";
+          remainder.style.display = "none";
+          appointment.style.display = "none";
+        }
         else if(selectedValue === "Review")
         {
-          document.getElementById("remarks").style.display="block";        
-          document.getElementById("remainder").style.display = "none";
-          document.getElementById("appointment").style.display = "none";
+          callback.style.display="none";
+          remarks.style.display="block";        
+          remainder.style.display = "none";
+          appointment.style.display = "none";
         }
         else if(selectedValue === "Reminder")
         {
-          document.getElementById("remarks").style.display="none";
-          document.getElementById("appointment").style.display = "none";
-          document.getElementById("remainder").style.display = "block";
+          callback.style.display="none";
+          remarks.style.display="none";
+          appointment.style.display = "none";
+          remainder.style.display = "block";
         }
         else if(selectedValue === "Appointment")
         {
-          document.getElementById("remarks").style.display="none";
-          document.getElementById("remainder").style.display = "none";
-          document.getElementById("appointment").style.display = "block";
+          callback.style.display="none";
+          remarks.style.display="none";
+          remainder.style.display = "none";
+          appointment.style.display = "block";
         }
       });
     });
@@ -51,9 +67,10 @@ $('input[name="call_experience"]').on('change', function()
   }
   else
   {
-    document.getElementById("remarks").style.display="none";
-      document.getElementById("remainder").style.display = "none";
-      document.getElementById("appointment").style.display = "none";
+    callback.style.display = "none";
+    remarks.style.display = "none";
+    remainder.style.display = "none";
+    appointment.style.display = "none";
     $('#second-option').hide();   
     storeTimeInDatabase1(elapsedTime1); 
     document.getElementById("callForm").submit();
@@ -63,12 +80,6 @@ $('input[name="call_experience"]').on('change', function()
 let startTime1;
 let elapsedTime1 = 0;
 let timerInterval1;
-
-// Button click event handler
-// document.getElementById("timerButton1").addEventListener("click", function() 
-// {
-//   handleTimerClick(this, 1);
-// });
 
 
 document.addEventListener("DOMContentLoaded", function()
@@ -119,8 +130,7 @@ function storeTimeInDatabase1(time)
   const seconds = Math.floor((time % (1000 * 60)) / 1000);
   document.getElementById("hour").value = hours;
   document.getElementById("minutes").value = minutes;
-  document.getElementById("seconds").value = seconds;  
-  // console.log("Time stored in the database for timer 1!");
+  document.getElementById("seconds").value = seconds;
 }
 
 // Common event handler for timer buttons

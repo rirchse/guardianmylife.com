@@ -44,7 +44,6 @@ $source = New SourceCtrl;
 
       <form action="{{route('applicant.store', $customer->id)}}" id="callForm" method="post">
           @csrf
-          {{-- @dd($customer) --}}
           <input type="hidden" name="customer_id" value="{{$customer->id}}">
         <div class="customer_call_information mt-3" id="customer_call_information">
             <label for="">Did you meet with the customer?</label> <br>
@@ -266,35 +265,32 @@ $source = New SourceCtrl;
     </div>
   </div>
   </div>
+  @endsection
+  @section('scripts')
 
-    @endsection
-@section('scripts')
-
-<script>
-   $('input[name="meet"]').on('change', function() {  
-    var selectedValue = $('input[name="meet"]:checked').val();    
-    if (selectedValue === 'Yes') {
-      $('#second-option').show();     
-    } else {
-      document.getElementById("reappointFrom").submit();
-      $('#second-option').hide();         
-    }
-  });
-
-
-  const putApplicationRadioGroup = document.getElementsByName("put_application");
-
-// Add a change event listener to the radio button group
-putApplicationRadioGroup.forEach(function(radioButton) {
-    radioButton.addEventListener("change", function() {
-        if (this.value === "Yes") {
-          document.getElementById("callForm").submit();
-        } else {
-            document.getElementById("callForm").submit();
-        }
+  <script>
+    $('input[name="meet"]').on('change', function() {  
+      var selectedValue = $('input[name="meet"]:checked').val();    
+      if (selectedValue === 'Yes') {
+        $('#second-option').show();     
+      } else {
+        document.getElementById("reappointFrom").submit();
+        $('#second-option').hide();         
+      }
     });
-});
 
-</script>
-@stop
 
+    const putApplicationRadioGroup = document.getElementsByName("put_application");
+
+    // Add a change event listener to the radio button group
+    putApplicationRadioGroup.forEach(function(radioButton) {
+        radioButton.addEventListener("change", function() {
+            if (this.value === "Yes") {
+              document.getElementById("callForm").submit();
+            } else {
+                document.getElementById("callForm").submit();
+            }
+        });
+    });
+  </script>
+  @endsection
