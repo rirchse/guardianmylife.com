@@ -15,6 +15,9 @@
   <link rel="stylesheet" href="{{asset('/admin/dist/css/adminlte.min.css')}}">
 </head>
 <body class="hold-transition login-page">
+
+  @include('layouts.message')
+  
 <div class="login-box">
   <div class="login-logo">
     <a href="/"><b>Login</b></a>

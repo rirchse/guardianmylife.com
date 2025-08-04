@@ -60,7 +60,7 @@ class LoginController extends Controller
           }
           else
           {
-            Session::flash('error', 'Login unsuccessfull. Please contact to administrator.');
+            Session::flash('error', 'Login failed. Username and Password doesn\'t match!.');
             return back();
           }
         }

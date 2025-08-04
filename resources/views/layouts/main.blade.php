@@ -11,7 +11,7 @@
   <link rel="alternate" href="https://guardianmylife.com/" hreflang="x-default" />
 
   <url>
-    <loc>https://guardianmylife.com/</loc>
+    {{-- <loc>https://guardianmylife.com/</loc> --}}
     <xhtml:link rel="alternate" hreflang="en-us" href="https://guardianmylife.com/" />
     <xhtml:link rel="alternate" hreflang="fr-fr" href="https://guardianmylife.com/fr/" />
     <xhtml:link rel="alternate" hreflang="es-es" href="https://guardianmylife.com/es/" />
