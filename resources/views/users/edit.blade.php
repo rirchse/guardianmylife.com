@@ -1,3 +1,4 @@
+{{-- {{dd($user)}} --}}
 @extends('layouts.main')
 @section('styles')
  <!-- DataTables -->
@@ -11,7 +12,7 @@
     <div class="tools" style="text-align: right">
       <a class="btn btn-info" href="{{route('users.index')}}">View Users</a>
     </div>
-    <form action="{{route('user.update',$user->id)}}" method="post">
+    <form action="{{route('user.update', $user->id)}}" method="post">
       @csrf
     <div class="row">
       <div class="col-md-12">
@@ -32,12 +33,18 @@
             <label>Full Name </label>
             <input type="text" value="{{$user->name}}" class="form-control" id="full_name" name="full_name" placeholder="Enter Full Name" >
           </div>
-        </div> 
-        <div class="col-md-12">
           <div class="form-group">
             <label> Email </label>
             <input type="email" value="{{$user->email}}" class="form-control" id="email" name="email" placeholder="Enter Email" >          
-          </div>     
+          </div>
+          <div class="form-group">
+            <label> Phone </label>
+            <input type="number" value="{{$user->phone}}" class="form-control" id="phone" name="phone" placeholder="Enter Phone Number" >
+          </div>
+          <div class="form-group">
+            <label> New Password </label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Enter New Password" >
+          </div>
         </div>
         <!-- /.col -->
        <br>

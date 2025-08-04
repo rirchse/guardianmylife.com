@@ -52,9 +52,20 @@ class LoginController extends Controller
         $email = $request->email;
         $password = $request->password;
 
-        if(Auth::attempt(['email' => $email, 'password' => $password], $remember = true))
-        {
+        try {
+          if(Auth::attempt(['email' => $email, 'password' => $password], $remember = true))
+          {
             return redirect()->route('home');
+          }
+          else
+          {
+            Session::flash('error', 'Login unsuccessfull. Please contact to administrator.');
+            return back();
+          }
         }
+        catch(\Exception $e)
+        {
+          return $e->getMessage();
+        }        
     }
 }
