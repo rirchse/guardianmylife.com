@@ -13,15 +13,15 @@ $source = New SourceCtrl;
     <div class="col-md-8">
       <div class="card">
         <div class="card-body">
-          <h3 class="mt-3">Previous Records</h3>
-          <div class="table-responsive">
+          <h3 class="mt-3">Previous Call Records</h3>
+          <div class="table-responsive" style="max-height: 400px">
             <table class="table">
               <thead>
                 <tr>
                   <th>Call Duration</th>
                   <th>Appointment</th>
-                  <th>Appointment Location</th> 
-                  <th>Notes</th>
+                  <th>Status</th> 
+                  <th>Location, Notes</th>
                   <th>Call Time</th>  
                 </tr>
               </thead>
@@ -30,8 +30,15 @@ $source = New SourceCtrl;
                 <tr>
                   <td>{{$call->call_time}}</td>
                   <td>{{$call->appointment? $call->appointment: 'No'}}</td>  
-                  <td>{{$call->appointment_location}}</td>
-                  <td>{{$call->appointment_notes}}</td>
+                  <td>{{$call->status}}</td>
+                  <td>
+                    @if($call->appointment_location)
+                      (<b>{{$call->appointment_location}}</b>)
+                      <br>
+                    @endif
+
+                    {{$call->appointment_notes}}
+                  </td>
                   <td>{{ $source->dtformat($call->created_at) }}</td>
                 </tr>
                 @endforeach
@@ -225,19 +232,19 @@ $source = New SourceCtrl;
             @if($customer->mobile)
             <tr>
               <th>Mobile Number:</th>
-              <td>{{$customer->mobile}} <span class="btn btn-success btn-sm" onclick="call(this); window.location='tel:{{$customer->mobile}}'"><i class="fa fa-phone"></i> </span></td>
+              <td>{{$customer->mobile}} <span class="btn btn-success btn-sm" onclick="call(this);"><i class="fa fa-phone"></i> </span></td>
             </tr>
             @endif
             @if($customer->home)
             <tr>
               <th>Home Phone:</th>
-              <td>{{$customer->home}} <span class="btn btn-success btn-sm" onclick="call(this); window.location='tel:{{$customer->home}}'"> <i class="fa fa-phone"></i> </span></td>
+              <td>{{$customer->home}} <span class="btn btn-success btn-sm" onclick="call(this);"> <i class="fa fa-phone"></i> </span></td>
             </tr>
             @endif
             @if($customer->work)
             <tr>
               <th>Work Number:</th>
-              <td>{{$customer->work}}<span class="btn btn-success btn-sm" onclick="call(this); window.location='tel:{{$customer->work}}'"><i class="fa fa-phone"></i> </span></td>
+              <td>{{$customer->work}}<span class="btn btn-success btn-sm" onclick="call(this);"><i class="fa fa-phone"></i> </span></td>
             </tr>
             @endif
             <tr>
@@ -248,7 +255,7 @@ $source = New SourceCtrl;
               </td>
             </tr>
           </table>
-          <form action="{{route('calls.store')}}" id="callForm" method="post">
+          <form action="{{route('call.store')}}" id="callForm" method="POST">
             @csrf
             <div class="customer_call_information mt-3" id="customer_call_information" style="display: none">
                 <label for="">Have you talked to the customer?</label>
@@ -277,71 +284,53 @@ $source = New SourceCtrl;
                 <label for="">What you want about call?</label>
                 <br>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" value="Callback" name="aboutcall" id="flexRadio0" onchange="check(this)">
-                  <label class="form-check-label" for="flexRadio0"> Callback </label>
+                  <input class="form-check-input" type="radio" value="Hang up" name="aboutcall" id="flexRadio1">
+                  <label class="form-check-label" for="flexRadio1"> Hang-Up </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" value="Review" name="aboutcall" id="flexRadio1" onchange="check(this)">
-                  <label class="form-check-label" for="flexRadio1"> Review </label>
+                  <input class="form-check-input" type="radio" value="Transfer" name="aboutcall" id="flexRadio0">
+                  <label class="form-check-label" for="flexRadio0"> Transfer </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" value="Reminder" name="aboutcall" id="flexRadio2" onchange="check(this)">
-                  <label class="form-check-label" for="flexRadio2"> Reminder </label>
+                  <input class="form-check-input" type="radio" value="Voicemail" name="aboutcall" id="flexRadio3" onchange="callEnd();">
+                  <label class="form-check-label" for="flexRadio3"> Voicemail </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" value="Appointment" name="aboutcall" id="flexRadioChecked3" onchange="check(this)">
-                  <label class="form-check-label" for="flexRadioChecked3"> Appointment </label>
+                  <input class="form-check-input" type="radio" value="Callback" name="aboutcall" id="flexRadio2">
+                  <label class="form-check-label" for="flexRadio2"> Callback </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" value="Appointment" name="aboutcall" id="flexRadio4">
+                  <label class="form-check-label" for="flexRadio4"> Appointment </label>
                 </div> 
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" value="Not Interested" name="aboutcall" id="flexRadioChecked4" onchange="callEnd(); check(this)">
-                  <label class="form-check-label" for="flexRadioChecked4"> Not interested </label>
-                </div>            
+                  <input class="form-check-input" type="radio" value="Not Interested" name="aboutcall" id="flexRadio5" onchange="callEnd();">
+                  <label class="form-check-label" for="flexRadio5"> Not interested </label>
+                </div>
               </div>
               <!--second section end here-->
 
               <!--Call Back-->
-        
+
               <div id="callback" style="display:none">
                 <div class="text-center">
                   <h4>---- Callback ----</h4>
                 </div>
-                  <div class="form-group">
-                    <label for="">Date & Time</label>
-                    <input name="callback_date_time" type="datetime-local" class="form-control" id="callback_date">
-                  </div>
-                  <div class="form-group">
-                    <label for="">Note</label>
-                    <textarea name="callback_remarks" class="form-control" id="callback_note" cols="30" rows="2"></textarea>            
-                  </div>
-                  <a href="#" class="btn btn-primary mt-2" onclick="callEnd(); submitFormAndRunFunction()" id="submit_button">Submit</a>
-              </div>
-
-              <div class="form-group" id="remarks" style="display:none">
-                <label for="">Give Remarks</label>
-                <textarea name="remarks" class="form-control" id="rev_remarks" cols="30" rows="5"></textarea>   
-                <a href="#" class="btn btn-primary mt-2" onclick="callEnd(); submitFormAndRunFunction()" id="submit_button">Submit</a> 
-              </div>
-              <!--remarks-->
-
-              <div id="remainder" style="display:none">
-                <div class="text-center">
-                  <h4>---- Remainder ----</h4>
+                <div class="form-group">
+                  <label for="">Date & Time</label>
+                  <input name="remainder_date_time" type="datetime-local" class="form-control" id="rem_date">
                 </div>
-                  <div class="form-group">
-                    <label for="">Note</label>
-                    <textarea name="remainder_remarks" class="form-control" id="rem_note" cols="30" rows="2"></textarea>            
-                  </div>
-                  <div class="form-group">
-                    <label for="">Date & Time</label>
-                    <input name="remainder_date_time" type="datetime-local" class="form-control" id="rem_date">
-                  </div>
-                  <a href="#" class="btn btn-primary mt-2" onclick="callEnd(); submitFormAndRunFunction()" id="submit_button">Submit</a>
+                <div class="form-group">
+                  <label for="">Note</label>
+                  <textarea name="remainder_remarks" class="form-control" id="rem_note" cols="30" rows="2"></textarea>            
+                </div>
+                <a href="#" class="btn btn-primary mt-2" onclick="callEnd(); submitFormAndRunFunction()" id="submit_button">Submit</a>
               </div>
     
               <!--remainder-->
               <div id="appointment" style="display:none">
                 <div class="text-center">
-                  <h4>---- Appointment ----</h4>
+                  <h4>---- Appointment Set ----</h4>
                 </div>
                 <div class="form-group">
                   <label for="">Location</label>
@@ -385,6 +374,7 @@ $source = New SourceCtrl;
       customer_call_information.style.display = 'block';
     }
   });
+  
 </script>
 @endsection
 

@@ -20,37 +20,49 @@
         var selectedValue = document.querySelector('input[name="aboutcall"]:checked').value;     
   
         // Show the corresponding div based on the selected value
-        if(selectedValue === "Not Interested")
+        if(selectedValue === "Not Interested" || selectedValue === "Voicemail")
         {
           storeTimeInDatabase1(elapsedTime1);     
           document.getElementById("callForm").submit();
         }
+        else if(selectedValue === "Hang up" || selectedValue === "Transfer")
+        {
+          storeTimeInDatabase1(elapsedTime1);
+
+          // submit to the server
+          const callform = document.getElementById("callForm");
+          const formData = new FormData(callform);
+          // console.log(...formData);
+
+          $.ajaxSetup({
+            headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
+          });
+
+          $.ajax({
+            type: 'POST',
+            url: '/calls/store',
+            data: formData,
+            contentType: false,
+            processData: false,
+            success: function(data){
+              console.log(data);
+            },
+            error: function(data){
+              console.error(data);
+            }
+          });
+
+          callback.style.display="none";
+          appointment.style.display = "none";
+        }
         else if(selectedValue === "Callback")
         {
           callback.style.display="block";
-          remarks.style.display = "none";
-          remainder.style.display = "none";
           appointment.style.display = "none";
-        }
-        else if(selectedValue === "Review")
-        {
-          callback.style.display="none";
-          remarks.style.display="block";        
-          remainder.style.display = "none";
-          appointment.style.display = "none";
-        }
-        else if(selectedValue === "Reminder")
-        {
-          callback.style.display="none";
-          remarks.style.display="none";
-          appointment.style.display = "none";
-          remainder.style.display = "block";
         }
         else if(selectedValue === "Appointment")
         {
           callback.style.display="none";
-          remarks.style.display="none";
-          remainder.style.display = "none";
           appointment.style.display = "block";
         }
       });
@@ -68,8 +80,8 @@ $('input[name="call_experience"]').on('change', function()
   else
   {
     callback.style.display = "none";
-    remarks.style.display = "none";
-    remainder.style.display = "none";
+    // remarks.style.display = "none";
+    // remainder.style.display = "none";
     appointment.style.display = "none";
     $('#second-option').hide();   
     storeTimeInDatabase1(elapsedTime1); 
@@ -93,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function()
     displayTime1(elapsedTime1);
 
     // Automatically trigger the button click event
-      document.getElementById("timerButton1").click();
+      // document.getElementById("timerButton1").click();
   }
 });
 

@@ -159,7 +159,7 @@ Route::middleware(['auth'])->group(function ()
 
   /** route create by Rafiqu Islam */
   Route::resource('call', CallController::class);
-  Route::post('/calls/store', [CallController::class,'store'])->name('calls.store');
+  Route::post('/calls/store', [CallController::class,'callStore'])->name('calls.store');
 
   Route::controller(AppointmentController::class)->group(function()
   {

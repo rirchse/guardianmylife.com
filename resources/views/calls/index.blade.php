@@ -17,25 +17,27 @@ $source = New SourceCtrl;
             <th>SL#</th>
             <th>Customer Name</th>
             <th>Call Duration</th>
-            <th>Status / Appointment</th> 
-            <th>Call Time</th>               
+            <th>Appointment</th> 
+            <th>Call Time</th>
+            <th>Status</th>
             <th>Action</th>
           </tr>
           </thead>
           <tbody>
           @foreach($calls as $call)
-          <tr>
+            <tr>
               <td>{{$loop->index+1}}</td>
-              <td>{{$call->Customer?$call->Customer->first_name:''}} {{$call->Customer?$call->Customer->last_name:''}}</td>
+              <td>{{$call->Customer ? $call->Customer->first_name : ''}} {{$call->Customer?$call->Customer->last_name:''}}</td>
               <td>{{$call->call_time}}</td>
               <td>{{isset($call->appointment)? $call->appointment: 'No'}}</td>  
-              <td>{{$source->dtformat($call->created_at)}}</td>                  
+              <td>{{$source->dtformat($call->created_at)}}</td>
+              <td>{{$call->status}}</td>
               <th>
                 <a href="{{route('customer.show', $call->customer_id)}}"><i class="fa fa-eye" aria-hidden="true"></i></a>
               </th>
-          </tr>
+            </tr>
           @endforeach
-          </tbody>       
+          </tbody>
         </table> 
       </div>
     </div>

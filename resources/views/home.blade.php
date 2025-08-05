@@ -10,18 +10,22 @@ $source = new SourceCtrl;
   <div class="col-md-12">
     <div class="card card-body">
 
-      <h1><span style="font-size:20px">Welcome</span><br>
+      <h1>
+        <span style="font-size:20px">Welcome</span>
+        <br>
         {{Auth::user()->name}}
         <br>
         <span style="font-size:20px">
-        @if(Auth::user()->role == 1)
-        Admin
-        @elseif(Auth::user()->role == 2)
-        Agent
-        @else
-        Employee
-        @endif
-        Dashboard</span></h1>
+          @if(Auth::user()->role == 1)
+          Admin
+          @elseif(Auth::user()->role == 2)
+          Agent
+          @else
+          Freelancer
+          @endif
+          Dashboard
+        </span>
+      </h1>
         @if(Auth::user()->role == 2)
         <p>Your referral link: <a id="referral_link" target="_blank" href="{{$source->host().'/agents/'.Auth::user()->username}}">{{$source->host().'/agents/'.Auth::user()->username}}</a> <button onclick="copyUrl()" class="btn btn-info btn-sm">Copy Link</button></p>
         @endif

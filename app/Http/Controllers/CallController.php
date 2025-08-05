@@ -72,28 +72,27 @@ class CallController extends Controller
 
         }
 
-        if($request->aboutcall == 'Review')
-        {
-            $request->validate([
-                'remarks' => 'nullable'
-            ]);
+        // if($request->aboutcall == 'Review')
+        // {
+        //     $request->validate([
+        //         'remarks' => 'nullable'
+        //     ]);
 
-            $customer = Customer::findorfail($request->customer_id);
-            $customer->Notes = $request->remarks;
-            $customer->save();
-            $call->notes = $request->remarks;
-        }
+        //     $customer = Customer::findorfail($request->customer_id);
+        //     $customer->Notes = $request->remarks;
+        //     $customer->save();
+        //     $call->notes = $request->remarks;
+        // }
+
 
         if($request->aboutcall == 'Callback')
         {
-          $request->validate([
-            'callback_date_time' => 'nullable',
-            'callback_remarks' => 'nullable'
-          ]);
+          $call->status = 'Callback';
+        }
 
-          $call->Appointment = 'Callback';
-          $call->appointment_time = $request->callback_date_time;
-          $call->appointment_notes = $request->callback_remarks;
+        if($request->aboutcall == 'Voicemail')
+        {
+          $call->status = 'Voicemail';
         }
 
         if($request->aboutcall == 'Appointment')
@@ -108,6 +107,7 @@ class CallController extends Controller
             $call->appointment_time = $request->appoint_date_time;
             $call->appointment_location = $request->appoint_location;
             $call->appointment_notes = $request->appoint_note;
+            $call->status = 'Appointment';
 
             // $agent = User::find($customer->lead_owner);
 
@@ -132,22 +132,40 @@ class CallController extends Controller
             Call::where('id', $last_call->id)->update($last_event);
         }
 
-        if($request->aboutcall == 'Reminder')
+        if($request->aboutcall == 'Callback')
         {
-            $request->validate([
-                'remainder_date_time' => 'nullable',
-                'remainder_remarks' => 'nullable'
-            ]);
+          $request->validate([
+            'remainder_date_time' => 'nullable',
+            'remainder_remarks' => 'nullable'
+          ]);
 
-            $reminder = new Reminder();
-            $reminder->call_id = $call->id;
-            $reminder->user_id = Auth::user()->id;
-            $reminder->customer_id = $request->customer_id;
-            $reminder->reminder_time = $request->remainder_date_time;
-            $reminder->note = $request->remainder_remarks;
-            $reminder->save();
+          $reminder = new Reminder();
+          $reminder->call_id = $call->id;
+          $reminder->user_id = Auth::user()->id;
+          $reminder->customer_id = $request->customer_id;
+          $reminder->reminder_time = $request->remainder_date_time;
+          $reminder->note = $request->remainder_remarks;
+          $reminder->save();
+          // dd($reminder);
         }
 
-        return redirect()->route('lead.index')->with('success','Call Added Successfully');
+        return redirect()->route('lead.index')->with('success', 'Call Added Successfully');
+    }
+
+    // ajax request: Call status records
+    public function callStore(Request $request)
+    {
+        $call = new Call;
+        $call->call_time = now();
+        $call->customer_id = $request->customer_id;
+        $call->user = Auth::user()->id;
+        $call->agent = Auth::user()->agent_id;
+        $call->contact = $request->call_experience;
+        $call->status = $request->aboutcall;
+        $call->save();
+
+        return response()->json([
+          'success' => true
+        ], 200);
     }
 }

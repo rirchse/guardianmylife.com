@@ -156,7 +156,7 @@
           <li class="nav-item">
             <a href="{{route('remainder.index')}}" class="nav-link">
               <i class="fa fa-bell" aria-hidden="true"></i>
-              <p>Reminders</p>
+              <p>Callbacks</p>
             </a>
           </li>
           @endif
