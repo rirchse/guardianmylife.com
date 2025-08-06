@@ -50,6 +50,7 @@ class CallController extends Controller
         $call->user = Auth::user()->id;
         $call->agent = Auth::user()->agent_id;
         $call->contact = $request->call_experience;
+        $call->status = $request->call_experience;
 
         if($request->aboutcall == 'Not Interested')
         {

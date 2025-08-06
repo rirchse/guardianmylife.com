@@ -361,7 +361,7 @@ $source = New SourceCtrl;
 @endsection
 
 @section('scripts')
-<script src="{{'/js/custom_js.js'}}"></script>
+<script src="{{'/js/custom_js.js?v=0.1.1'}}"></script>
       
 <script>
   var customer_id = {{$customer->id}};
