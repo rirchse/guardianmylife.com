@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Controllers\SourceCtrl;
 use App\Models\AdminLogs;
 use App\Models\Call;
 use App\Models\Customer;
@@ -60,7 +61,8 @@ class UserController extends Controller
     }
 
     public function userupdate(Request $request, $id)
-    {        
+    {
+      $source = new SourceCtrl;       
         $request->validate([
             'full_name' => ['required', 'string', 'max:255'],          
         ]);
@@ -68,7 +70,12 @@ class UserController extends Controller
         $user = User::findorfail($id);
         $user->role = $request->role;
         $user->name = $request->full_name;
-        $user->email = $request->email;       
+        $user->email = $request->email;
+        $user->phone = $request->phone;
+        if($request->hasFile('photo'))
+        {
+          $user->photo = $source->uploadFile($request->photo, 'users/');
+        }
         
         $user->save();
         return redirect()->back()->with('success','User Updated Successfully');

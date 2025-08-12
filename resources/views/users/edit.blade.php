@@ -12,7 +12,7 @@
     <div class="tools" style="text-align: right">
       <a class="btn btn-info" href="{{route('users.index')}}">View Users</a>
     </div>
-    <form action="{{route('user.update', $user->id)}}" method="post">
+    <form action="{{route('user.update', $user->id)}}" method="post" enctype="multipart/form-data">
       @csrf
     <div class="row">
       <div class="col-md-12">
@@ -42,9 +42,12 @@
             <input type="number" value="{{$user->phone}}" class="form-control" id="phone" name="phone" placeholder="Enter Phone Number" >
           </div>
           <div class="form-group">
-            <label> New Password </label>
-            <input type="password" class="form-control" id="password" name="password" placeholder="Enter New Password" >
+            <label> Photo </label>
+            <input type="file" class="form-control" id="photo" name="photo">
           </div>
+          <p>
+            <img src="{{$user->photo}}" alt="" width="100">
+          </p>
         </div>
         <!-- /.col -->
        <br>

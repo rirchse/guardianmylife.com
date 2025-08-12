@@ -5,6 +5,15 @@ use App\Models\Customer;
 
 class SourceCtrl extends Controller
 {
+  public function uploadFile($file, $path, $size = null)
+  {
+    $file_name = uniqid().'.'.$file->getClientOriginalExtension();
+    $path = 'uploads/'.$path;
+    $file->move(public_path($path), $file_name);
+    $fileUrl = '/'.$path.$file_name;
+    return $fileUrl;
+  }
+
   public static function dtformat($date)
   {
     if($date)
