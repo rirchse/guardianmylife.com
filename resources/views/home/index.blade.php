@@ -89,12 +89,12 @@
       </div>
     </div>
 
-    <div class="elementor-element elementor-element-3633d3d1 elementor-widget gform_footer top_label" >
+    {{-- <div class="elementor-element elementor-element-3633d3d1 elementor-widget gform_footer top_label" >
       <a href="/documents/GML_Booklet.pdf" download="GuardianMyLife_Booklet.pdf" style="text-decoration: none; color:black">
       <button class="button gform_button" style="margin-top:50px; padding: 10px 25px; font-size:22px">
         <img src="/home/images/brochure.png" alt="" width="30"> Download Booklet</button>
       </a>
-    </div>
+    </div> --}}
   </section>
   
   <section class="elementor-section elementor-top-section elementor-element elementor-element-738b9180 elementor-section-content-middle elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible" data-id="738b9180" data-element_type="section" data-settings="{&quot;animation&quot;:&quot;fadeInUp&quot;}">
