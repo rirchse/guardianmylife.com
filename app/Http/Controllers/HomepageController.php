@@ -80,4 +80,27 @@ class HomepageController extends Controller
     return view('home.blog-show', compact('blog'));
   }
 
+  public function routerUsers()
+  {
+    $router = "http://103.7.4.19/rest";
+    $user   = "rocky";
+    $pass   = "rocky";
+    
+    // Hotspot Active
+    $url = $router . "/ppp/active";
+    
+    // cURL request
+    $ch = curl_init($url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_USERPWD, "$user:$pass");
+    curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); // if self-signed cert
+    
+    $response = curl_exec($ch);
+    curl_close($ch);
+    
+    $data = json_decode($response, true);
+    return $data;
+  }
+
 }
