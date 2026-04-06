@@ -151,7 +151,7 @@
                       <div class="elementor-element elementor-element-94e058a elementor-widget elementor-widget-image" data-id="94e058a" data-element_type="widget" data-widget_type="theme-site-logo.default">
                         <div class="elementor-widget-container">
                           <a href="#">
-                          <img fetchpriority="high" width="600" height="105" src="/home/images/logo.png?v=1710" class="attachment-full size-full wp-image-673" alt="" srcset="/home/images/logo.png?v=1710" sizes="(max-width: 600px) 100vw, 600px" />
+                          <img fetchpriority="high" width="600" height="105" src="/home/images/logo.png?v=1711" class="attachment-full size-full wp-image-673" alt="" srcset="/home/images/logo.png?v=1711" sizes="(max-width: 600px) 100vw, 600px" />
                           </a>
                         </div>
                       </div>
@@ -622,6 +622,9 @@
             <div class="elementor-widget-wrap elementor-element-populated">
               <div class="elementor-element elementor-element-812f7d5 elementor-widget elementor-widget-text-editor" data-id="812f7d5" data-element_type="widget" data-widget_type="text-editor.default">
                 <div class="elementor-widget-container">
+                  
+                  <p style="color: #ececec;font-style:italic">Guardian My Life is a marketing brand of Mesidor Azor, a licensed insurance producer in NY and GA.</p>
+
                   <p>
                     <span style="color: #ececec;"><a style="color: #ececec;" href="/uploads/docs/Guardian Life PRIVACY POLICY.pdf" target="_blank" rel="noopener">Privacy</a></span>  |  <span style="color: #ececec;"><a target="_blank" style="color: #ececec;" href="/uploads/docs/Independent_Contractor_Privacy_Notice.pdf">Independent Contractor Privacy Notice</a></span>  |  <span style="color: #ececec;"><a style="color: #ececec;" href="/uploads/docs/Do_Not_Sell_My_Personal_Information.pdf" target="_blank" rel="noopener">Do Not Sell My Personal Information</a></span> | 
                     <span><a style="color: #ececec;" target="_blank" href="/uploads/docs/Guadian My Life Values.pdf">Mission & Vision</a></span>
