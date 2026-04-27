@@ -38,6 +38,10 @@
   </section>
   <section class="elementor-section elementor-top-section elementor-element elementor-element-44281a33 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="44281a33" data-element_type="section">
      <div class="elementor-container">
+      
+      <div id="soro-blog"></div>
+      <script src="https://app.trysoro.com/api/embed/ce389dde-c788-4cfc-8c45-9a7a1c4e68ec" defer></script>
+
       <ul class="blog-list">
          @foreach($blogs as $key => $blog)
          <li style="clear: both">

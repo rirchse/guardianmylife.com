@@ -16,7 +16,7 @@
               <style>/*! elementor - v3.22.0 - 26-06-2024 */
                 .elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}
               </style>
-              <h1 class="elementor-heading-title elementor-size-default">Preserve & Protect what matters most!</h1>
+              <h1 class="elementor-heading-title elementor-size-default">Protect What Matters Most — Your Family, Your Future</h1>
             </div>
           </div>
           
@@ -49,7 +49,8 @@
           </div>
           <div class="elementor-element elementor-element-320ccfb8 elementor-invisible elementor-widget elementor-widget-heading" data-id="320ccfb8" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
             <div class="elementor-widget-container">
-              <p class="elementor-heading-title elementor-size-default">Guardian My Life collaborates with independent insurance agents and partners with the industry's leading carriers. Reach out to us today to discover more about our comprehensive solutions, including Whole Life, Final Expense, Mortgage Protection, Final Expense, Universal Life, Children Life Insurance, and Fixed Indexed Annuities.</p>
+              <p class="elementor-heading-title elementor-size-default">I help families secure their financial future with the right life insurance and protection strategies — simple, clear, and built around your needs.</p>
+              {{-- <p class="elementor-heading-title elementor-size-default">Guardian My Life collaborates with independent insurance agents and partners with the industry's leading carriers. Reach out to us today to discover more about our comprehensive solutions, including Whole Life, Final Expense, Mortgage Protection, Final Expense, Universal Life, Children Life Insurance, and Fixed Indexed Annuities.</p> --}}
             </div>
           </div>
           <div class="elementor-element elementor-element-75555e3b elementor-align-right elementor-widget__width-auto elementor-mobile-align-justify elementor-tablet-align-center elementor-invisible elementor-widget elementor-widget-button" data-id="75555e3b" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="button.default">
@@ -185,7 +186,7 @@
         <div class="elementor-widget-wrap elementor-element-populated">
           <div class="elementor-element elementor-element-5006c2d7 elementor-widget elementor-widget-heading" data-id="5006c2d7" data-element_type="widget" data-widget_type="heading.default">
             <div class="elementor-widget-container">
-              <h2 class="elementor-heading-title elementor-size-default">Helping families is <br> our #1 priority.</h2>
+              <h2 class="elementor-heading-title elementor-size-default">About Me</h2>
             </div>
           </div>
           <div class="elementor-element elementor-element-66245be0 elementor-widget elementor-widget-text-editor" data-id="66245be0" data-element_type="widget" data-widget_type="text-editor.default">
