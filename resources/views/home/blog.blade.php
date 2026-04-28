@@ -12,6 +12,7 @@
    .blog-list li img{padding-top: 0; float: left; max-width: 250px; padding: 0 15px 0;}
    .title{font-size: 22px; font-weight: bold}
    .read-btn {border:1px solid #ddd; clear:top; background:#eee}
+   #soro-blog{padding-top: 25px}
 
 </style>
 @endsection
